@@ -42,7 +42,7 @@ void carregar_mapa(char *nome_arquivo) {
         if (strncmp(linha, "EOF", 3) == 0) break;
 
         if (lendo_coordenadas && index < TAM_ROTA) {
-            // LÍ o ID, a posiÁ„o X e a posiÁ„o Y
+            // L√™ o ID, a posi√ß√£o X e a posi√ß√£o Y
             sscanf(linha, "%d %lf %lf", &mapa[index].id, &mapa[index].x, &mapa[index].y);
             index++;
         }
@@ -72,7 +72,7 @@ void calc_fitness(struct Individuo *ind) {
     ind->distancia_total = total;
 }
 
-// Gera o DNA inicial com uma rota totalmente aleatÛria (sem repetir cidades)
+// Gera o DNA inicial com uma rota totalmente aleat√≥ria (sem repetir cidades)
 void gerar_dna(struct Individuo *ind) {
     for (int i = 0; i < TAM_ROTA; i++) {
         ind->rota[i] = i;
@@ -88,7 +88,7 @@ void gerar_dna(struct Individuo *ind) {
     calc_fitness(ind);
 }
 
-// Torneio invertido: Agora quem ganha a luta È o que tem a MENOR rota
+// Torneio invertido: Agora quem ganha a luta √© o que tem a MENOR rota
 struct Individuo torneio(struct Individuo pop_atual[]) {
     int s1 = rand() % TAM_P;
     int s2 = rand() % TAM_P;
@@ -108,13 +108,13 @@ struct Individuo torneio(struct Individuo pop_atual[]) {
 // O Novo Cruzamento Inteligente: Previne que o filho visite o mesmo poste duas vezes
 struct Individuo reproducao_e_mutacao(struct Individuo *paiA, struct Individuo *paiB, int mutacao) {
     struct Individuo filho;
-    int cidade_visitada[TAM_ROTA] = {0}; // Zera as anotaÁıes de visita
+    int cidade_visitada[TAM_ROTA] = {0}; // Zera as anota√ß√µes de visita
 
     // 1) O filho herda a primeira metade exata da rota do Pai A
     int metade = TAM_ROTA / 2;
     for (int i = 0; i < metade; i++) {
         filho.rota[i] = paiA->rota[i];
-        cidade_visitada[paiA->rota[i]] = 1; // Marca que essa cidade j· est· na rota
+        cidade_visitada[paiA->rota[i]] = 1; // Marca que essa cidade j√° est√° na rota
     }
 
     // 2) Preenche o restante com as cidades do Pai B (apenas as que faltam)
@@ -128,7 +128,7 @@ struct Individuo reproducao_e_mutacao(struct Individuo *paiA, struct Individuo *
         }
     }
 
-    // 3) A Nova MutaÁ„o (Swap): Troca dois postes de lugar na rota
+    // 3) A Nova Muta√ß√£o (Swap): Troca dois postes de lugar na rota
     int x = rand() % 100;
     if (x < mutacao) {
         int p1 = rand() % TAM_ROTA;
@@ -150,18 +150,18 @@ int main() {
     struct Individuo pop_atual[TAM_P];
     struct Individuo pop_nova[TAM_P];
 
-    // GeraÁ„o 0 (PopulaÁ„o Inicial)
+    // Gera√ß√£o 0 (Popula√ß√£o Inicial)
     for (int i = 0; i < TAM_P; i++) {
         gerar_dna(&pop_atual[i]);
     }
 
-    int mutacao = 10; // Para o TSP, mutaÁıes mais altas ajudam a n„o estagnar
+    int mutacao = 10; // Para o TSP, muta√ß√µes mais altas ajudam a n√£o estagnar
     double melhor_distancia_geral = 99999999.0;
     int Numero_Geracao = 1;
 
     printf("\n--- Iniciando Evolucao do Caixeiro Viajante (TSP) ---\n");
 
-    // CondiÁ„o de parada: Rodar por 1000 geraÁıes para ver o algoritmo convergir
+    // Condi√ß√£o de parada: Rodar por 1000 gera√ß√µes para ver o algoritmo convergir
     while (Numero_Geracao <= 1000) {
         struct Individuo paiA, paiB;
         double melhor_dessa_geracao = 99999999.0;
@@ -182,7 +182,7 @@ int main() {
             }
         }
 
-        // Imprime o progresso a cada 100 geraÁıes para n„o floodar a tela
+        // Imprime o progresso a cada 100 gera√ß√µes para n√£o floodar a tela
         if (Numero_Geracao % 100 == 0 || Numero_Geracao == 1) {
             printf("Geracao %d | Menor Rota Encontrada: %.2f\n", Numero_Geracao, melhor_dessa_geracao);
         }
