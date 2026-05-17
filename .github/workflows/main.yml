@@ -15,6 +15,6 @@ jobs:
 
     - name: Entrar na pasta, Compilar e Executar
       run: |
-        cd "Exercicios/Exercicios TSP 2 - 4000 Postes"
+        cd "Exercicios/Exercicio TSP 2 - 4000 Postes"
         gcc CodTSP.c -o evolucao -lm
         ./evolucao
