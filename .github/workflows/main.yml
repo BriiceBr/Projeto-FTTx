@@ -15,7 +15,7 @@ jobs:
 
     - name: Compilar o codigo em C
       # Lembre-se de trocar "seu_codigo.c" pelo nome exato do seu arquivo
-      run: gcc seu_codigo.c -o evolucao -lm
+      run: gcc Exemplo Modelo.c -o evolucao -lm
 
     - name: Executar a Evolucao do TSP
       run: ./evolucao
