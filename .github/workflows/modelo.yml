@@ -1,0 +1,20 @@
+name: Executar Modelo TSP (52 Postes)
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  executar-modelo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Baixar o codigo do repositorio
+      uses: actions/checkout@v4
+
+    - name: Entrar na pasta, Compilar e Executar
+      run: |
+        cd "Exercicios/Exercicio TSP"
+        gcc ExemploModelo.c -o modelo -lm
+        ./modelo
