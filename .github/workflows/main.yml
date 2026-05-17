@@ -3,7 +3,7 @@ name: Executar Algoritmo Genetico TSP
 on:
   push:
     branches: [ "main" ]
-  workflow_dispatch: # Permite que você clique em um botão no site para rodar manualmente
+  workflow_dispatch:
 
 jobs:
   executar-ia:
@@ -13,9 +13,8 @@ jobs:
     - name: Baixar o codigo do repositorio
       uses: actions/checkout@v4
 
-    - name: Compilar o codigo em C
-      # Lembre-se de trocar "seu_codigo.c" pelo nome exato do seu arquivo
-      run: gcc CodTSP.c -o evolucao -lm
-
-    - name: Executar a Evolucao do TSP
-      run: ./evolucao
+    - name: Entrar na pasta, Compilar e Executar
+      run: |
+        cd "Exercicios/Exercicios TSP 2 - 4000 Postes"
+        gcc CodTSP.c -o evolucao -lm
+        ./evolucao
