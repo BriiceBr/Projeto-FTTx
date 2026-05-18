@@ -1,0 +1,20 @@
+name: Executar Simulador FTTx (20 Postes)
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  executar-simulador:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Baixar o codigo do repositorio
+      uses: actions/checkout@v4
+
+    - name: Entrar na pasta, Compilar e Executar
+      run: |
+        cd "Simulador"
+        gcc Simulador_FTTx.c -o simulador -lm
+        ./simulador
