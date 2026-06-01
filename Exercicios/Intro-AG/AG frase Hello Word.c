@@ -11,7 +11,6 @@ struct ind{
     int fitness;          // Nota de 0 a 11
 };
 
-
 void gerar_dna(char *alfabeto, struct ind *individuo) {
     int rLetra;
     for (int i = 0; i < TAM_FRASE; i++) {

@@ -11,6 +11,8 @@
 #define TAM_ROTA 20
 // Tamanho padrao da populacao
 #define TAM_P 100
+// taxa de mutacao
+#define TAX_MUTACAO 10
 
 // Os postes possuem um ID e a localizacao
 struct poste{
@@ -65,14 +67,14 @@ void abrir_arquivo(char nome_arq[]) {
 //funcao para gerar um individuo em sequencia
 void gerar_primeira_pop(struct individuo* ind) {
     int i;
-    for (i = 0; i < TAM_ROTA; i++) {
+    for(i = 0; i < TAM_ROTA; i++) {
         //coloca uma rota em sequencia
         ind->rota[i] = i;
     }
 
     // O laco para no 1 (i > 1) e o sorteio ignora o 0 (+ 1) para travar a OLT
     for(i = TAM_ROTA - 1; i > 1; i--) {
-        //busca uma posicao entre 0 e i (Agora ignorando a posicao da OLT)
+        //busca uma posicao entre 0 e i, ignorando a OLT indice 0
         int j = (rand() % i) + 1;
         //troca a posicao
         int temp = ind->rota[i];
@@ -93,7 +95,7 @@ void calc_fitness(struct individuo *ind) {
     int i;
 
     // Soma do poste 0 até o penúltimo
-    for (i = 0; i < TAM_ROTA - 1; i++) {
+    for(i = 0; i < TAM_ROTA - 1; i++) {
         int id_atual = ind->rota[i];
         int id_prox = ind->rota[i+1];
         total += calcular_distancia(mapa[id_atual], mapa[id_prox]);
@@ -122,23 +124,49 @@ struct individuo torneio(struct individuo pop_atual[]) {
     return vencedor;
 }
 
+// mutacao deixei como parametro mesmo tendo uma variavel global, se eu quiser mudar
 struct individuo reproducao_e_mutacao(struct individuo *paiA, struct individuo *paiB, int mutacao) {
     struct individuo filho;
-
     int cidade_visitada[TAM_ROTA] = {0};
     int i;
 
+    // OLT mantem no indice 0
+    filho.rota[0] = paiA->rota[0];
+    cidade_visitada[paiA->rota[0]] = 1;
 
-    int metade = TAM_ROTA / 2;
-    for (i = 0; i < metade; i++) {
+    // Definir o intervalo (Corrigido os parenteses da matematica)
+    int ponto_A = (rand() % (TAM_ROTA - 1)) + 1;
+    int ponto_B = (rand() % (TAM_ROTA - 1)) + 1;
+
+    if (ponto_A > ponto_B) {
+        int aux = ponto_A;
+        ponto_A = ponto_B;
+        ponto_B = aux;
+    }
+
+    // Copiar aquele intervalo do pai A para o filho
+    for(i = ponto_A; i <= ponto_B; i++) {
         filho.rota[i] = paiA->rota[i];
         cidade_visitada[paiA->rota[i]] = 1;
     }
 
-    int pos_filho = metade;
-    for (i = 0; i < TAM_ROTA; i++) {
-        int cidade_candidata = paiB->rota[i];
+    // Comecar a copiar o restante com o paiB
+    int pos_filho = 1;
 
+    // Corrigido: O laco agora comeca do 1 para ler o pai B inteiro
+    for(i = 1; i < TAM_ROTA; i++) {
+
+        // Corrigido: O pulo do gato adicionado!
+        if (pos_filho == ponto_A) {
+            pos_filho = ponto_B + 1;
+        }
+
+        // Corrigido: Trava de seguranca para nao estourar a memoria
+        if (pos_filho >= TAM_ROTA) {
+            break;
+        }
+
+        int cidade_candidata = paiB->rota[i];
 
         if (cidade_visitada[cidade_candidata] == 0) {
             filho.rota[pos_filho] = cidade_candidata;
@@ -147,18 +175,31 @@ struct individuo reproducao_e_mutacao(struct individuo *paiA, struct individuo *
         }
     }
 
+    // MUTACAO
     int chance = rand() % 100;
     if (chance < mutacao) {
-        // Sorteia posicoes de 1 para frente para nao arrancar a OLT da primeira gaveta
         int p1 = (rand() % (TAM_ROTA - 1)) + 1;
         int p2 = (rand() % (TAM_ROTA - 1)) + 1;
 
-        int temp = filho.rota[p1];
+        int aux = filho.rota[p1];
         filho.rota[p1] = filho.rota[p2];
-        filho.rota[p2] = temp;
+        filho.rota[p2] = aux;
     }
 
     return filho;
+}
+
+void imprimir_pop(struct individuo populacao_impressa[]) {
+    int i, j;
+    printf("\n --- Imprimindo a populacao --- \n");
+
+    for(i = 0; i < TAM_P; i++) {
+        printf("Individuo %d: ", i);
+        for (j = 0; j < TAM_ROTA; j++){
+            printf("%d, ", populacao_impressa[i].rota[j]);
+        }
+        printf("\n");
+    }
 }
 
 int main () {
@@ -172,6 +213,8 @@ int main () {
         gerar_primeira_pop(&pop[i]);
         calc_fitness(&pop[i]);
     }
+    // quero mostrar a primeira populacao
+    imprimir_pop(pop);
 
     int geracao = 1;
     double melhor_distancia_historica = 999999999.0;
@@ -179,7 +222,8 @@ int main () {
     printf("\n--- Iniciando a Evolucao da Rede (20 postes - Rota Linear) ---\n");
 
 
-    while (geracao <= 10000) {
+    while (geracao <= 100000) {
+        // indice rei é o melhor individuo da geracao; aplicando o elistismo
         int indice_rei = 0;
         for (j = 1; j < TAM_P; j++) {
             if (pop[j].distancia_total < pop[indice_rei].distancia_total) {
@@ -193,7 +237,7 @@ int main () {
             struct individuo paiA = torneio(pop);
             struct individuo paiB = torneio(pop);
 
-            pop_nova[i] = reproducao_e_mutacao(&paiA, &paiB, 10);
+            pop_nova[i] = reproducao_e_mutacao(&paiA, &paiB, TAX_MUTACAO);
             calc_fitness(&pop_nova[i]);
         }
 
