@@ -4,7 +4,7 @@
 #include<time.h>
 #include<math.h>
 
-///Este código, tem como objetivo simular uma rede de fibra optica, usando como exemplo os exercicios apresentados. Foi criado por conta um arquivo TSP de 20 postes ("rede20.tsp") para simular uma rede */
+///Este cÃ³digo, tem como objetivo simular uma rede de fibra optica, usando como exemplo os exercicios apresentados. Foi criado por conta um arquivo TSP de 20 postes ("rede20.tsp") para simular uma rede */
 
 
 // 20 postes total dentro do arquivo TSP "rede20.tsp"
@@ -43,7 +43,7 @@ void abrir_arquivo(char nome_arq[]) {
     }
     // linhas do arquivo (Tamanho aumentado para 256 para evitar erro de leitura)
     char linhas[256];
-    // flag para quando começar a ler as coordenadas
+    // flag para quando comeÃ§ar a ler as coordenadas
     int lendo_coordenadas = 0;
     // este indice indica qual o poste que vai receber as coordenadas e o ID
     int indice = 0;
@@ -56,7 +56,7 @@ void abrir_arquivo(char nome_arq[]) {
         if (strncmp(linhas, "EOF", 3) == 0) break;
 
         if (lendo_coordenadas && indice < TAM_ROTA) {
-            // Lê o ID, a posição X e a posição Y
+            // LÃª o ID, a posiÃ§Ã£o X e a posiÃ§Ã£o Y
             sscanf(linhas, "%d %f %f", &mapa[indice].id, &mapa[indice].x, &mapa[indice].y);
             indice++;
         }
@@ -89,12 +89,12 @@ double calcular_distancia(struct poste p1, struct poste p2) {
     return sqrt((dx * dx) + (dy * dy));
 }
 
-// Percorre a rota inteira do indivíduo somando os metros de cabo
+// Percorre a rota inteira do indivÃ­duo somando os metros de cabo
 void calc_fitness(struct individuo *ind) {
     double total = 0.0;
     int i;
 
-    // Soma do poste 0 até o penúltimo
+    // Soma do poste 0 atÃ© o penÃºltimo
     for(i = 0; i < TAM_ROTA - 1; i++) {
         int id_atual = ind->rota[i];
         int id_prox = ind->rota[i+1];
@@ -107,7 +107,7 @@ void calc_fitness(struct individuo *ind) {
 
 // Torneio
 struct individuo torneio(struct individuo pop_atual[]) {
-    // Sorteia 3 posições aleatórias no viveiro
+    // Sorteia 3 posiÃ§Ãµes aleatÃ³rias no viveiro
     int s1 = rand() % TAM_P;
     int s2 = rand() % TAM_P;
     int s3 = rand() % TAM_P;
@@ -182,7 +182,7 @@ struct individuo reproducao_e_mutacao(struct individuo *paiA, struct individuo *
         cidade_visitada[paiA->rota[i]] = 1;
     }
 
-    // comecar a copiar o restante com o paiB, começando do 1
+    // comecar a copiar o restante com o paiB, comeÃ§ando do 1
     int pos_filho = 1;
     for(i = 1; i < TAM_ROTA; i++) {
         if (pos_filho == ponto_A) {
@@ -253,7 +253,7 @@ int main () {
 
 
     while (geracao <= 100000) {
-        // indice rei é o melhor individuo da geracao; aplicando o elistismo
+        // indice rei Ã© o melhor individuo da geracao; aplicando o elistismo
         int indice_rei = 0;
         for (j = 1; j < TAM_P; j++) {
             if (pop[j].distancia_total < pop[indice_rei].distancia_total) {
@@ -265,8 +265,8 @@ int main () {
 
         for (i = 1; i < TAM_P; i++) {
             // roleta() ou torneio()
-            struct individuo paiA = torneio(pop);
-            struct individuo paiB = torneio(pop);
+            struct individuo paiA = roleta(pop);
+            struct individuo paiB = roleta(pop);
 
             pop_nova[i] = reproducao_e_mutacao(&paiA, &paiB, TAX_MUTACAO);
             calc_fitness(&pop_nova[i]);
