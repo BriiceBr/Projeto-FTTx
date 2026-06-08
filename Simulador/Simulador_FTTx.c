@@ -48,7 +48,7 @@ void abrir_arquivo(char nome_arq[]) {
     // este indice indica qual o poste que vai receber as coordenadas e o ID
     int indice = 0;
 
-      while (fgets(linhas, sizeof(linhas), arquivo)) {
+    while (fgets(linhas, sizeof(linhas), arquivo)) {
         if (strncmp(linhas, "NODE_COORD_SECTION", 18) == 0) {
             lendo_coordenadas = 1;
             continue;
@@ -105,6 +105,7 @@ void calc_fitness(struct individuo *ind) {
     ind->distancia_total = total;
 }
 
+// Torneio
 struct individuo torneio(struct individuo pop_atual[]) {
     // Sorteia 3 posições aleatórias no viveiro
     int s1 = rand() % TAM_P;
@@ -124,50 +125,78 @@ struct individuo torneio(struct individuo pop_atual[]) {
     return vencedor;
 }
 
+// Roleta
+struct individuo roleta(struct individuo pop_atual[]) {
+    int i;
+    double soma_avaliacoes = 0.0;
+    double fatias[TAM_P];
+
+    for (i = 0; i < TAM_P; i++) {
+        if (pop_atual[i].distancia_total == 0) {
+            fatias[i] = 0.0;
+        } else {
+            fatias[i] = 1.0 / pop_atual[i].distancia_total;
+        }
+        soma_avaliacoes += fatias[i];
+    }
+
+    double giro = ((double)rand() / RAND_MAX) * soma_avaliacoes;
+
+    double acumulador = 0.0;
+    for (i = 0; i < TAM_P; i++) {
+        acumulador += fatias[i];
+        if (acumulador >= giro) {
+            return pop_atual[i];
+        }
+    }
+
+    return pop_atual[TAM_P - 1];
+}
+
 // mutacao deixei como parametro mesmo tendo uma variavel global, se eu quiser mudar
 struct individuo reproducao_e_mutacao(struct individuo *paiA, struct individuo *paiB, int mutacao) {
     struct individuo filho;
-    int cidade_visitada[TAM_ROTA] = {0};
-    int i;
 
+    /// REPRODUCAO
+    // vetor onde sinaliza qual poste ja foi colocado no novo filho
+    int cidade_visitada[TAM_ROTA] = {0};    // o indice do vetor representa o ID do poste, ex: indice0 = 1 (utilizado), indice1 = 0 (inutilizado)
+    int i;
     // OLT mantem no indice 0
     filho.rota[0] = paiA->rota[0];
+    // marcar o poste como ja colocado
     cidade_visitada[paiA->rota[0]] = 1;
 
-    // Definir o intervalo (Corrigido os parenteses da matematica)
+    //definir o intervalo a ser copiado do pai A (O ponto A sempre sendo o menor e o B maior)
     int ponto_A = (rand() % (TAM_ROTA - 1)) + 1;
     int ponto_B = (rand() % (TAM_ROTA - 1)) + 1;
-
+    // teste para ver qual o maior
     if (ponto_A > ponto_B) {
         int aux = ponto_A;
         ponto_A = ponto_B;
         ponto_B = aux;
     }
 
-    // Copiar aquele intervalo do pai A para o filho
+    // copiar aquele intervalo do pai A para o filho
     for(i = ponto_A; i <= ponto_B; i++) {
         filho.rota[i] = paiA->rota[i];
         cidade_visitada[paiA->rota[i]] = 1;
     }
 
-    // Comecar a copiar o restante com o paiB
+    // comecar a copiar o restante com o paiB, começando do 1
     int pos_filho = 1;
-
-    // Corrigido: O laco agora comeca do 1 para ler o pai B inteiro
     for(i = 1; i < TAM_ROTA; i++) {
-
-        // Corrigido: O pulo do gato adicionado!
         if (pos_filho == ponto_A) {
             pos_filho = ponto_B + 1;
         }
 
-        // Corrigido: Trava de seguranca para nao estourar a memoria
+        // Trava de seguranca contra estouro de memoria
         if (pos_filho >= TAM_ROTA) {
             break;
         }
 
         int cidade_candidata = paiB->rota[i];
 
+        // Se a cidade candidata ainda nao estiver na rota, ela entra
         if (cidade_visitada[cidade_candidata] == 0) {
             filho.rota[pos_filho] = cidade_candidata;
             cidade_visitada[cidade_candidata] = 1;
@@ -175,9 +204,10 @@ struct individuo reproducao_e_mutacao(struct individuo *paiA, struct individuo *
         }
     }
 
-    // MUTACAO
+    /// MUTACAO
     int chance = rand() % 100;
     if (chance < mutacao) {
+        // Sorteia posicoes de 1 para frente para nao arrancar a OLT da primeira gaveta
         int p1 = (rand() % (TAM_ROTA - 1)) + 1;
         int p2 = (rand() % (TAM_ROTA - 1)) + 1;
 
@@ -205,7 +235,7 @@ void imprimir_pop(struct individuo populacao_impressa[]) {
 int main () {
     srand(time(NULL));
 
-    int i, j;
+    int i, j, k; // Variavel k declarada aqui em cima para o Code::Blocks nao dar erro
 
     abrir_arquivo("rede20.tsp");
 
@@ -234,6 +264,7 @@ int main () {
         pop_nova[0] = pop[indice_rei];
 
         for (i = 1; i < TAM_P; i++) {
+            // roleta() ou torneio()
             struct individuo paiA = torneio(pop);
             struct individuo paiB = torneio(pop);
 
@@ -260,7 +291,7 @@ int main () {
     printf("OLT 1 ");
 
     // Laco vai ate o penultimo, calculando a distancia exata para o proximo
-    for (int k = 0; k < TAM_ROTA - 1; k++) {
+    for (k = 0; k < TAM_ROTA - 1; k++) {
         int p_atual = pop_nova[0].rota[k];
         int p_prox = pop_nova[0].rota[k+1];
 
