@@ -5,8 +5,8 @@
 #include<string.h>
 
 #define TAM_MAPA 52     // Total de pontos do mapa (OLT + postes + clientes)
-#define TAM_P 10       // Tamanho da populacao
-#define TAX_MUTACAO 10  // Taxa de mutacao
+#define TAM_P 100    // Tamanho da populacao
+#define TAX_MUTACAO 40  // Taxa de mutacao
 
 struct poste {
     int id; // numero do poste
@@ -135,9 +135,9 @@ void gerar_primeira_pop(struct individuo* ind) {
             break;
         }
         // Sorteio de rua
-        int sorteio = rand() % num_candidatos;
-        int origem_escolhida = cand_origem[sorteio];
-        int destino_escolhido = cand_destino[sorteio];
+        int sorteio = rand() % num_candidatos;              // No lugar de selecionar a aresta de menor peso, o sistema realiza um rand() % num_candidatos
+        int origem_escolhida = cand_origem[sorteio];         //   Isso garante que cada indivíduo fique com uma topologia válida,
+        int destino_escolhido = cand_destino[sorteio];      //  conectando todos os pontos, mas com tracados novos.
 
         // Conecta o novo poste na rede anotando de onde o cabo veio
         ind->pai[destino_escolhido] = origem_escolhida;
@@ -166,8 +166,8 @@ void avaliar_individuo(struct individuo *ind) {
             filhos[i] = 0;
         }
         // Conta quantos filhos cada no possui na arvore atual
-        for(i = 0; i < TAM_MAPA; i++) {
-            if (ind->pai[i] != -1) {
+        for(i = 0; i < TAM_MAPA; i++) {                                                    /// O codigo entende que um poste de passagem (1) que seja um nó folha
+            if (ind->pai[i] != -1) {                                                       /// é um desperdicio e corta ele e inclusive o pai se tbm nao tiver ligacao
                 filhos[ind->pai[i]]++;
             }
         }
@@ -300,6 +300,19 @@ struct individuo cruzamento_arvore(struct individuo *paiA, struct individuo *pai
     return filho;
 }
 
+// Funcao para impedir que a mutacao crie loops isolados
+int forma_ciclo(int candidato_pai, int no_mutado, int vetor_pais[]) {
+    int atual = candidato_pai;
+    // Sobe pela arvore ate achar a OLT (-1)
+    while (atual != -1) {
+        if (atual == no_mutado) {
+            return 1; // ALERTA: Encontrou ele mesmo, vai formar um ciclo!
+        }
+        atual = vetor_pais[atual];
+    }
+    return 0; // Caminho livre, pode conectar
+}
+
 /// Mutacao
 void mutacao_arvore(struct individuo *ind) {
     // Sorteia a chance de a mutacao ocorrer (0 a 99)
@@ -313,8 +326,8 @@ void mutacao_arvore(struct individuo *ind) {
 
         // Varre o mapa procurando outras opcoes de ruas para este poste
         for (i = 0; i < TAM_MAPA; i++) {
-            // Regras: 1. Existe rua fisica? 2. O vizinho ja faz parte da rede? 3. Nao e o pai atual?
-            if (matriz_arcos[no_mutado][i] == 1 && ind->pai[i] != -1 && i != ind->pai[no_mutado]) {
+            //        1. Existe rua?             2. Vizinho ta na rede?    3. Nao e o pai atual?               4. NAO FORMA CICLO?
+            if (matriz_arcos[no_mutado][i] == 1 && ind->pai[i] != -1 && i != ind->pai[no_mutado] && forma_ciclo(i, no_mutado, ind->pai) == 0) {
                 vizinhos_validos[num_vizinhos] = i;
                 num_vizinhos++;
             }
@@ -401,7 +414,7 @@ main () {
             printf("Geracao %d | Menor Gasto de Cabo: %.2f metros\n", geracao, pop_nova[0].distancia_total);
         }
 
-        // D. Atualiza a populacao
+        // Atualiza a populacao
         for (i = 0; i < TAM_P; i++) {
             pop[i] = pop_nova[i];
         }
@@ -478,6 +491,18 @@ main () {
         fprintf(log, "- Menor distancia absoluta encontrada: %.2f metros\n", melhor_historico);
         fprintf(log, "- Distancia na geracao final: %.2f metros\n", pop[0].distancia_total);
         fprintf(log, "----------------------------------------\n\n");
+
+        fprintf(log, "\nMAPA DE CONEXOES (ELITE - INDIVIDUO 0):\n");
+
+        // Substitua NUM_NOS pela variavel que representa o total de postes no seu codigo
+        for (int i = 0; i < 52; i++) {
+            // A condicao abaixo ignora a raiz e os nos desconectados
+            // Ajuste o if caso o seu codigo represente a raiz de uma forma diferente (como 0 ou -1)
+            if (pop[0].pai[i] != -1 && pop[0].pai[i] != i && pop[0].pai[i] != 0) {
+                fprintf(log, "-> Cabo saindo do No %d ate o No %d\n", pop[0].pai[i], i);
+            }
+        }
+
 
         fclose(log);
         printf("\n-> Log salvo com sucesso no arquivo '%s'!\n", nome_log);
