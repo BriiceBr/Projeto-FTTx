@@ -1,0 +1,60 @@
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: toy3.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 10
+- Taxa de Mutacao: 80%
+- Total de Geracoes: 10000
+- Metodo de Selecao: Torneio
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 1158.21 metros
+- Distancia na geracao final: 1158.21 metros
+----------------------------------------
+
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: toy3.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 10
+- Taxa de Mutacao: 80%
+- Total de Geracoes: 20000
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 1216.76 metros
+- Distancia na geracao final: 1216.76 metros
+----------------------------------------
+
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: toy3.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 10
+- Taxa de Mutacao: 10%
+- Total de Geracoes: 10000
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 1234.78 metros
+- Distancia na geracao final: 1234.78 metros
+----------------------------------------
+
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: toy3.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 10
+- Taxa de Mutacao: 10%
+- Total de Geracoes: 10000
+- Metodo de Selecao: Torneio
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 1169.28 metros
+- Distancia na geracao final: 1169.28 metros
+----------------------------------------
+

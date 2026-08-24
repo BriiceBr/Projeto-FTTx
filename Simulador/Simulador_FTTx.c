@@ -6,20 +6,25 @@
 
 ///Este código, tem como objetivo simular uma rede de fibra optica, usando como exemplo os exercicios apresentados. Foi criado por conta um arquivo TSP de 20 postes ("rede20.tsp") para simular uma rede */
 
+/// MELHOR ATÉ AGORA rede20.tsp -> 439.91m - usando roleta
 
-// 20 postes total dentro do arquivo TSP "rede20.tsp"
-#define TAM_ROTA 20
+// Max de nos
+#define TAM_ROTA 52 // a suzianne começa nos postes 1 e nao 0
 // Tamanho padrao da populacao
 #define TAM_P 100
 // taxa de mutacao
-#define TAX_MUTACAO 10
+#define TAX_MUTACAO 5
+
 
 // Os postes possuem um ID e a localizacao
 struct poste{
     int id;
     float x;
     float y;
+    int tipo; // 0 OLT, 1 POSTE, 2 CLIENTE
 };
+
+int matriz_arcos[TAM_ROTA][TAM_ROTA] = {0};
 
 // Essa struct serve para guardar cada poste
 struct poste mapa[TAM_ROTA];
@@ -34,8 +39,110 @@ struct individuo {
 struct individuo pop[TAM_P];
 struct individuo pop_nova[TAM_P];
 
+// funcao nova para ler arquivos usados no tcc
+void ler_instancia_fttx(char nome_arq[]) {
+    FILE* arq = fopen(nome_arq, "r");
+    if (arq == NULL) {
+        printf("Erro ao abrir arquivo %s!\n", nome_arq);
+    }
+    char linhas[256];
+    int lendo_nos  = 0;
+    int lendo_arcos = 0;
+
+    while (fgets(linhas, sizeof(linhas), arq)) {
+        // identifica quando começa a ler os nos
+        if (strstr(linhas, "Nodes") != NULL) {
+            lendo_nos = 1;
+            lendo_arcos = 0;
+            continue;
+        }
+        // o codigo desliga a leitura de nos e passa para ler os arcos
+        if (strstr(linhas, "Arcs") != NULL) {
+            lendo_nos = 0;
+            lendo_arcos = 1;
+            continue;
+        }
+        // desliga a leitura de arcos
+        if (strstr(linhas, "Splitters") != NULL || strstr(linhas, "BalancedSplitters") != NULL) {
+            lendo_arcos = 0;
+        }
+
+        // para ler os nos e coordenadas junto com id de cada poste/cliente
+        if (lendo_nos == 1) {
+            int id_lido;
+            float x, y;
+            // le o ID dps a coordenada
+            if (sscanf(linhas, "%d %f %f", &id_lido, &x, &y) == 3) {
+                int id_correto = id_lido - 1;
+                mapa[id_correto].id = id_correto;
+                mapa[id_correto].x = x;
+                mapa[id_correto].y = y;
+
+                // com base no ID lido, o codigo diz qual o tipo daquele poste
+                if (id_lido == 1) {
+                    mapa[id_correto].tipo = 0; // OLT
+                }
+                else if (id_lido >= 41 && id_lido <= 52) {
+                    mapa[id_correto].tipo = 2; // Cliente Final
+                }
+                else {
+                    mapa[id_correto].tipo = 1; // Poste de Passagem
+                }
+            }
+        }
+        // le os arcos e coloca 1 nos arcos se for 0 nao existe aquele arco
+        if (lendo_arcos == 1) {
+            int origem, destino;
+            if (sscanf(linhas, "%d %d", &origem, &destino) == 2) {
+                matriz_arcos[origem - 1][destino - 1    ] = 1;
+            }
+        }
+    } // while
+    fclose(arq);
+}
+
+void gerar_primeira_pop(struct individuo* ind) {
+    int i, j;
+    // para lembrar quais nos ja foram usados. 0 = Nao visitado / 1 = Visitado
+    int visitado[TAM_ROTA] = {0};
+    // a cada passo deve ser analisado qual o proximo
+    int vizinhos_validos[TAM_ROTA];
+    int num_vizinhos;
+
+    for(i = 1; i < TAM_ROTA; i++) {
+        ind->rota[i] = -1;
+    }
+    // sempre sai da OLT
+    ind->rota[0] = 0; // OLT
+    visitado[0] = 1;  // OLT visitada
+
+    int poste_atual = 0;
+
+    for(i = 1; i < TAM_ROTA; i++) {
+        num_vizinhos = 0;
+        for(j = 0; j < TAM_ROTA; j++) {
+            if (matriz_arcos[poste_atual][j] == 1 && visitado[j] == 0) {
+                vizinhos_validos[num_vizinhos] = j;
+                num_vizinhos++;
+            }
+        }
+        // senao tiver saida encerra
+        if(num_vizinhos == 0) {
+            break;
+        }
+    // sorteia o proximo passo da rede
+    int prox_passo = rand() % num_vizinhos;
+    int prox_poste = vizinhos_validos[prox_passo];
+
+    ind->rota[i] = prox_poste;
+    visitado[prox_poste] = 1;
+    poste_atual = prox_poste;
+    }
+
+}
+
 // Funcao copiada dos exercicios para a leitura do arquivo TSP
-void abrir_arquivo(char nome_arq[]) {
+/*void abrir_arquivo(char nome_arq[]) {
     FILE* arquivo = fopen(nome_arq, "r");
     if (arquivo == NULL) {
         printf("Erro ao abrir o arquivo %s!\n", nome_arq);
@@ -63,8 +170,9 @@ void abrir_arquivo(char nome_arq[]) {
     }
     fclose(arquivo);
 }
+*/
 
-//funcao para gerar um individuo em sequencia
+/*funcao para gerar um individuo em sequencia
 void gerar_primeira_pop(struct individuo* ind) {
     int i;
     for(i = 0; i < TAM_ROTA; i++) {
@@ -81,16 +189,16 @@ void gerar_primeira_pop(struct individuo* ind) {
         ind->rota[i] = ind->rota[j];
         ind->rota[j] = temp;
     }
-}
+}*/
 
-double calcular_distancia(struct poste p1, struct poste p2) {
+double pit(struct poste p1, struct poste p2) {
     float dx = p1.x - p2.x;
     float dy = p1.y - p2.y;
     return sqrt((dx * dx) + (dy * dy));
 }
 
 // Percorre a rota inteira do indivíduo somando os metros de cabo
-void calc_fitness(struct individuo *ind) {
+void calc_distancia(struct individuo *ind) {
     double total = 0.0;
     int i;
 
@@ -98,12 +206,16 @@ void calc_fitness(struct individuo *ind) {
     for(i = 0; i < TAM_ROTA - 1; i++) {
         int id_atual = ind->rota[i];
         int id_prox = ind->rota[i+1];
-        total += calcular_distancia(mapa[id_atual], mapa[id_prox]);
+        if (id_prox == -1) {
+        break;
+    }
+        total += pit(mapa[id_atual], mapa[id_prox]);
     }
 
     // Salva a nota final
     ind->distancia_total = total;
 }
+
 
 // Torneio
 struct individuo torneio(struct individuo pop_atual[]) {
@@ -114,7 +226,7 @@ struct individuo torneio(struct individuo pop_atual[]) {
 
     struct individuo vencedor = pop_atual[s1];
 
-    // Verifica quem tem a menor distancia para roubar a coroa
+    // Verifica quem tem a menor distancia
     if (pop_atual[s2].distancia_total < vencedor.distancia_total) {
         vencedor = pop_atual[s2];
     }
@@ -146,74 +258,102 @@ struct individuo roleta(struct individuo pop_atual[]) {
     for (i = 0; i < TAM_P; i++) {
         acumulador += fatias[i];
         if (acumulador >= giro) {
-            return pop_atual[i];
+            return pop_atual[TAM_P-1];
         }
     }
 
-    return pop_atual[TAM_P - 1];
+
 }
 
 // mutacao deixei como parametro mesmo tendo uma variavel global, se eu quiser mudar
 struct individuo reproducao_e_mutacao(struct individuo *paiA, struct individuo *paiB, int mutacao) {
     struct individuo filho;
-
-    /// REPRODUCAO
+    int i, j;
+    /// REPRODUCAO (Cruzamento por Interseção)
     // vetor onde sinaliza qual poste ja foi colocado no novo filho
-    int cidade_visitada[TAM_ROTA] = {0};    // o indice do vetor representa o ID do poste, ex: indice0 = 1 (utilizado), indice1 = 0 (inutilizado)
-    int i;
-    // OLT mantem no indice 0
-    filho.rota[0] = paiA->rota[0];
-    // marcar o poste como ja colocado
-    cidade_visitada[paiA->rota[0]] = 1;
-
-    //definir o intervalo a ser copiado do pai A (O ponto A sempre sendo o menor e o B maior)
-    int ponto_A = (rand() % (TAM_ROTA - 1)) + 1;
-    int ponto_B = (rand() % (TAM_ROTA - 1)) + 1;
-    // teste para ver qual o maior
-    if (ponto_A > ponto_B) {
-        int aux = ponto_A;
-        ponto_A = ponto_B;
-        ponto_B = aux;
+    int visitado[TAM_ROTA] = {0};
+    for(i = 0; i < TAM_ROTA; i++) {
+        filho.rota[i] = -1;
     }
+    // postes em comum
+    int em_comum[TAM_ROTA];
+    int num_comum = 0;
+    // busca pelos 2 iguais
+    for (i = 1; i < TAM_ROTA; i++) {
+        int poste_A = paiA->rota[i];
+        if (poste_A == -1) break;
 
-    // copiar aquele intervalo do pai A para o filho
-    for(i = ponto_A; i <= ponto_B; i++) {
-        filho.rota[i] = paiA->rota[i];
-        cidade_visitada[paiA->rota[i]] = 1;
+        for (j = 1; j < TAM_ROTA; j++) {
+            int poste_B = paiB->rota[j];
+            if (poste_B == -1) break;
+
+            if (poste_A == poste_B) {
+                em_comum[num_comum] = poste_A;
+                num_comum++;
+                break;
+            }
+        }
     }
+    // nova rota
+    if (num_comum > 0) {
+        // Sorteia um dos pontos de encontro validos
+        int sorteio = rand() % num_comum;
+        int poste_corte = em_comum[sorteio];
 
-    // comecar a copiar o restante com o paiB, começando do 1
-    int pos_filho = 1;
-    for(i = 1; i < TAM_ROTA; i++) {
-        if (pos_filho == ponto_A) {
-            pos_filho = ponto_B + 1;
+        // Acha onde o corte vai acontecer
+        int ind_corte_A = 0;
+        int ind_corte_B = 0;
+
+        for (i = 0; i < TAM_ROTA; i++) {
+            if (paiA->rota[i] == poste_corte) {
+                ind_corte_A = i;
+            }
+            if (paiB->rota[i] == poste_corte) {
+            ind_corte_B = i;
+            }
         }
-
-        // Trava de seguranca contra estouro de memoria
-        if (pos_filho >= TAM_ROTA) {
-            break;
-        }
-
-        int cidade_candidata = paiB->rota[i];
-
-        // Se a cidade candidata ainda nao estiver na rota, ela entra
-        if (cidade_visitada[cidade_candidata] == 0) {
-            filho.rota[pos_filho] = cidade_candidata;
-            cidade_visitada[cidade_candidata] = 1;
+        // Copia a Parte 1 usando o paiA até o corte 1
+        int pos_filho = 0;
+        for (i = 0; i <= ind_corte_A; i++) {
+            filho.rota[pos_filho] = paiA->rota[i];
+            visitado[paiA->rota[i]] = 1;
             pos_filho++;
+        }
+
+        // Copia a Parte 2 usando o paiB dps do corte
+        for (i = ind_corte_B + 1; i < TAM_ROTA; i++) {
+            int cand = paiB->rota[i];
+            if (cand == -1) break;
+
+            // trava de seguranca para ndar loop
+            if (visitado[cand] == 1) break;
+
+            filho.rota[pos_filho] = cand;
+            visitado[cand] = 1;
+            pos_filho++;
+        }
+
+    } else {
+        // Se eles não se cruzaram em nenhum momento copia o paiA inteiro
+        for (i = 0; i < TAM_ROTA; i++) {
+            filho.rota[i] = paiA->rota[i];
         }
     }
 
     /// MUTACAO
     int chance = rand() % 100;
     if (chance < mutacao) {
-        // Sorteia posicoes de 1 para frente para nao arrancar a OLT da primeira gaveta
-        int p1 = (rand() % (TAM_ROTA - 1)) + 1;
-        int p2 = (rand() % (TAM_ROTA - 1)) + 1;
-
-        int aux = filho.rota[p1];
-        filho.rota[p1] = filho.rota[p2];
-        filho.rota[p2] = aux;
+        int tam_filho = 0;
+        for (i = 0; i < TAM_ROTA; i++) {
+            if (filho.rota[i] != -1) tam_filho++;
+        }
+            // faz a mutacao sem tirar a olt
+       if (tam_filho > 4) {
+            int ponto_corte = (rand() % (tam_filho - 2)) + 1;
+            for (i = ponto_corte; i < TAM_ROTA; i++) {
+                filho.rota[i] = -1;
+            }
+        }
     }
 
     return filho;
@@ -225,8 +365,13 @@ void imprimir_pop(struct individuo populacao_impressa[]) {
 
     for(i = 0; i < TAM_P; i++) {
         printf("Individuo %d: ", i);
+
         for (j = 0; j < TAM_ROTA; j++){
-            printf("%d, ", populacao_impressa[i].rota[j]);
+            if (populacao_impressa[i].rota[j] == -1) {
+                break;
+            }
+            //
+            printf("%d, ", populacao_impressa[i].rota[j] + 1);
         }
         printf("\n");
     }
@@ -237,11 +382,15 @@ int main () {
 
     int i, j, k; // Variavel k declarada aqui em cima para o Code::Blocks nao dar erro
 
-    abrir_arquivo("rede20.tsp");
+    // Para ler arquivos tsp
+    //abrir_arquivo("rede20.tsp");
+
+    // Para ler instancias do tcc
+    ler_instancia_fttx("toy3.txt");
 
     for(i = 0; i < TAM_P; i++) {
         gerar_primeira_pop(&pop[i]);
-        calc_fitness(&pop[i]);
+        calc_distancia(&pop[i]);
     }
     // quero mostrar a primeira populacao
     imprimir_pop(pop);
@@ -269,7 +418,7 @@ int main () {
             struct individuo paiB = torneio(pop);
 
             pop_nova[i] = reproducao_e_mutacao(&paiA, &paiB, TAX_MUTACAO);
-            calc_fitness(&pop_nova[i]);
+            calc_distancia(&pop_nova[i]);
         }
 
         if (pop_nova[0].distancia_total < melhor_distancia_historica) {
@@ -294,9 +443,12 @@ int main () {
     for (k = 0; k < TAM_ROTA - 1; k++) {
         int p_atual = pop_nova[0].rota[k];
         int p_prox = pop_nova[0].rota[k+1];
+        if (p_prox == -1) {
+            break;
+        }
 
         // Mede a distancia especifica desse trecho
-        double dist = calcular_distancia(mapa[p_atual], mapa[p_prox]);
+        double dist = pit(mapa[p_atual], mapa[p_prox]);
 
         // Exibe o proximo poste e quanto gastou para chegar nele (Soma +1 para visualizacao)
         printf("-> %d (Dist: %.2fm) ", p_prox + 1, dist);

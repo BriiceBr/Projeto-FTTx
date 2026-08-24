@@ -1,0 +1,49 @@
+// Funcao copiada dos exercicios para a leitura do arquivo TSP
+/*void abrir_arquivo(char nome_arq[]) {
+    FILE* arquivo = fopen(nome_arq, "r");
+    if (arquivo == NULL) {
+        printf("Erro ao abrir o arquivo %s!\n", nome_arq);
+        exit(1);
+    }
+    // linhas do arquivo (Tamanho aumentado para 256 para evitar erro de leitura)
+    char linhas[256];
+    // flag para quando começar a ler as coordenadas
+    int lendo_coordenadas = 0;
+    // este indice indica qual o poste que vai receber as coordenadas e o ID
+    int indice = 0;
+
+    while (fgets(linhas, sizeof(linhas), arquivo)) {
+        if (strncmp(linhas, "NODE_COORD_SECTION", 18) == 0) {
+            lendo_coordenadas = 1;
+            continue;
+        }
+        if (strncmp(linhas, "EOF", 3) == 0) break;
+
+        if (lendo_coordenadas && indice < TAM_ROTA) {
+            // Lê o ID, a posição X e a posição Y
+            sscanf(linhas, "%d %f %f", &mapa[indice].id, &mapa[indice].x, &mapa[indice].y);
+            indice++;
+        }
+    }
+    fclose(arquivo);
+}
+*/
+
+/*funcao para gerar um individuo em sequencia
+void gerar_primeira_pop(struct individuo* ind) {
+    int i;
+    for(i = 0; i < TAM_ROTA; i++) {
+        //coloca uma rota em sequencia
+        ind->rota[i] = i;
+    }
+
+    // O laco para no 1 (i > 1) e o sorteio ignora o 0 (+ 1) para travar a OLT
+    for(i = TAM_ROTA - 1; i > 1; i--) {
+        //busca uma posicao entre 0 e i, ignorando a OLT indice 0
+        int j = (rand() % i) + 1;
+        //troca a posicao
+        int temp = ind->rota[i];
+        ind->rota[i] = ind->rota[j];
+        ind->rota[j] = temp;
+    }
+}*/
