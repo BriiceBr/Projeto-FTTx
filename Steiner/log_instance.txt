@@ -1,0 +1,128 @@
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: instance.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 80%
+- Total de Geracoes: 10000
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 90.07 metros
+- Distancia na geracao final: 90.07 metros
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 8 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 2 ate o No 8
+-> Cabo saindo do No 7 ate o No 9
+-> Cabo saindo do No 8 ate o No 10
+-> Cabo saindo do No 9 ate o No 11
+-> Cabo saindo do No 10 ate o No 12
+-> Cabo saindo do No 11 ate o No 13
+-> Cabo saindo do No 12 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 13 ate o No 18
+-> Cabo saindo do No 2 ate o No 19
+-> Cabo saindo do No 8 ate o No 20
+-> Cabo saindo do No 8 ate o No 21
+-> Cabo saindo do No 14 ate o No 22
+-> Cabo saindo do No 16 ate o No 23
+-> Cabo saindo do No 9 ate o No 24
+-> Cabo saindo do No 9 ate o No 25
+-> Cabo saindo do No 9 ate o No 26
+-> Cabo saindo do No 6 ate o No 27
+-> Cabo saindo do No 4 ate o No 28
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: instance.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 40%
+- Total de Geracoes: 30000
+- Metodo de Selecao: Torneio
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 90.07 metros
+- Distancia na geracao final: 90.07 metros
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 8 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 2 ate o No 8
+-> Cabo saindo do No 7 ate o No 9
+-> Cabo saindo do No 8 ate o No 10
+-> Cabo saindo do No 9 ate o No 11
+-> Cabo saindo do No 10 ate o No 12
+-> Cabo saindo do No 11 ate o No 13
+-> Cabo saindo do No 12 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 13 ate o No 18
+-> Cabo saindo do No 2 ate o No 19
+-> Cabo saindo do No 8 ate o No 20
+-> Cabo saindo do No 8 ate o No 21
+-> Cabo saindo do No 14 ate o No 22
+-> Cabo saindo do No 16 ate o No 23
+-> Cabo saindo do No 9 ate o No 24
+-> Cabo saindo do No 9 ate o No 25
+-> Cabo saindo do No 9 ate o No 26
+-> Cabo saindo do No 6 ate o No 27
+-> Cabo saindo do No 4 ate o No 28
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: instance.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 40%
+- Total de Geracoes: 8000
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 75.24 metros
+- Distancia na geracao final: 75.24 metros
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 8 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 2 ate o No 8
+-> Cabo saindo do No 7 ate o No 9
+-> Cabo saindo do No 8 ate o No 10
+-> Cabo saindo do No 10 ate o No 12
+-> Cabo saindo do No 12 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 2 ate o No 19
+-> Cabo saindo do No 8 ate o No 20
+-> Cabo saindo do No 8 ate o No 21
+-> Cabo saindo do No 14 ate o No 22
+-> Cabo saindo do No 16 ate o No 23
+-> Cabo saindo do No 9 ate o No 24
+-> Cabo saindo do No 9 ate o No 25
+-> Cabo saindo do No 9 ate o No 26
+-> Cabo saindo do No 6 ate o No 27
+-> Cabo saindo do No 4 ate o No 28

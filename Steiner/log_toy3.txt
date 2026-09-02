@@ -220,3 +220,134 @@ MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
 -> Cabo saindo do No 29 ate o No 49
 -> Cabo saindo do No 28 ate o No 50
 -> Cabo saindo do No 2 ate o No 51
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: toy3.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 40%
+- Total de Geracoes: 10000
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 1256.04 metros
+- Distancia na geracao final: 1256.04 metros
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 8 ate o No 2
+-> Cabo saindo do No 9 ate o No 8
+-> Cabo saindo do No 10 ate o No 9
+-> Cabo saindo do No 25 ate o No 10
+-> Cabo saindo do No 45 ate o No 12
+-> Cabo saindo do No 21 ate o No 20
+-> Cabo saindo do No 1 ate o No 21
+-> Cabo saindo do No 1 ate o No 25
+-> Cabo saindo do No 10 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 2 ate o No 40
+-> Cabo saindo do No 31 ate o No 41
+-> Cabo saindo do No 31 ate o No 42
+-> Cabo saindo do No 26 ate o No 43
+-> Cabo saindo do No 27 ate o No 44
+-> Cabo saindo do No 10 ate o No 45
+-> Cabo saindo do No 12 ate o No 46
+-> Cabo saindo do No 20 ate o No 47
+-> Cabo saindo do No 20 ate o No 48
+-> Cabo saindo do No 29 ate o No 49
+-> Cabo saindo do No 28 ate o No 50
+-> Cabo saindo do No 2 ate o No 51
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: toy3.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 40%
+- Total de Geracoes: 10000
+- Metodo de Selecao: Torneio
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 1192.45 metros
+- Distancia na geracao final: 1192.45 metros
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 8 ate o No 2
+-> Cabo saindo do No 9 ate o No 8
+-> Cabo saindo do No 10 ate o No 9
+-> Cabo saindo do No 25 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 21 ate o No 20
+-> Cabo saindo do No 1 ate o No 21
+-> Cabo saindo do No 1 ate o No 25
+-> Cabo saindo do No 10 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 44 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 2 ate o No 40
+-> Cabo saindo do No 31 ate o No 41
+-> Cabo saindo do No 31 ate o No 42
+-> Cabo saindo do No 26 ate o No 43
+-> Cabo saindo do No 28 ate o No 44
+-> Cabo saindo do No 11 ate o No 45
+-> Cabo saindo do No 12 ate o No 46
+-> Cabo saindo do No 20 ate o No 47
+-> Cabo saindo do No 21 ate o No 48
+-> Cabo saindo do No 30 ate o No 49
+-> Cabo saindo do No 28 ate o No 50
+-> Cabo saindo do No 2 ate o No 51
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: toy3.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 20
+- Taxa de Mutacao: 80%
+- Total de Geracoes: 8000
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 1232.24 metros
+- Distancia na geracao final: 1232.24 metros
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 9 ate o No 3
+-> Cabo saindo do No 10 ate o No 9
+-> Cabo saindo do No 11 ate o No 10
+-> Cabo saindo do No 26 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 22 ate o No 21
+-> Cabo saindo do No 2 ate o No 22
+-> Cabo saindo do No 2 ate o No 26
+-> Cabo saindo do No 11 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 3 ate o No 41
+-> Cabo saindo do No 32 ate o No 42
+-> Cabo saindo do No 32 ate o No 43
+-> Cabo saindo do No 27 ate o No 44
+-> Cabo saindo do No 29 ate o No 45
+-> Cabo saindo do No 12 ate o No 46
+-> Cabo saindo do No 13 ate o No 47
+-> Cabo saindo do No 21 ate o No 48
+-> Cabo saindo do No 22 ate o No 49
+-> Cabo saindo do No 31 ate o No 50
+-> Cabo saindo do No 29 ate o No 51
+-> Cabo saindo do No 3 ate o No 52

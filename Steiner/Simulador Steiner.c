@@ -4,8 +4,8 @@
 #include<math.h>
 #include<string.h>
 
-#define TAM_MAPA 52     // Total de pontos do mapa (OLT + postes + clientes)
-#define TAM_P 100    // Tamanho da populacao
+#define TAM_MAPA 126     // Total de pontos do mapa (OLT + postes + clientes)
+#define TAM_P 200   // Tamanho da populacao
 #define TAX_MUTACAO 40  // Taxa de mutacao
 
 struct poste {
@@ -37,8 +37,15 @@ void ler_instancia_fttx(char nome_arq[]) {
     char linhas[256];
     int lendo_nos = 0;
     int lendo_arcos = 0;
+    int num_clientes = 0;
 
     while (fgets(linhas, sizeof(linhas), arq)) {
+        // Identifica a quantidade de clientes no cabecalho do txt
+        if (strstr(linhas, "Clients") != NULL) {
+            sscanf(linhas, "Clients %d", &num_clientes);
+            continue;
+        }
+
         // Identifica quando comeca a ler os nós
         if (strstr(linhas, "Nodes") != NULL) {
             lendo_nos = 1;
@@ -73,8 +80,8 @@ void ler_instancia_fttx(char nome_arq[]) {
                 if (id_lido == 1) {
                     mapa[id_correto].tipo = 0; // OLT
                 }
-                // Adaptando os ultimos 12 pontos como clientes
-                else if (id_lido >= (TAM_MAPA - 11) && id_lido <= TAM_MAPA) {
+                // Automatizado: os ultimos 'num_clientes' da rede sao clientes
+                else if (num_clientes > 0 && id_lido > (TAM_MAPA - num_clientes)) {
                     mapa[id_correto].tipo = 2; // Cliente Final
                 }
                 else {
@@ -123,7 +130,7 @@ void gerar_primeira_pop(struct individuo* ind) {
         for (i = 0; i < TAM_MAPA; i++) {
             if (visitado[i] == 1) {
                 for (j = 0; j < TAM_MAPA; j++) {
-                    if (matriz_arcos[i][j] == 1 && visitado[j] == 0) {
+                    if (matriz_arcos[i][j] == 1 && visitado[j] == 0 && mapa[i].tipo != 2) {
                         cand_origem[num_candidatos] = i;
                         cand_destino[num_candidatos] = j;
                         num_candidatos++;
@@ -162,7 +169,7 @@ void avaliar_individuo(struct individuo *ind) {
     // Repete o corte de cabos ate que nenhum poste inutil sobre
     do {
         removeu_alguem = 0;
-        for(i = 0; i < TAM_MAPA; i++) {
+        for(i = 0; i < TAM_MAPA; i++) { // zera os filhos
             filhos[i] = 0;
         }
         // Conta quantos filhos cada no possui na arvore atual
@@ -261,7 +268,7 @@ struct individuo cruzamento_arvore(struct individuo *paiA, struct individuo *pai
             if (visitado[i] == 1) {
                 for (j = 0; j < TAM_MAPA; j++) {
                     // A rua existe no mundo fisico E o vizinho ainda nao tem cabo?
-                    if (matriz_arcos[i][j] == 1 && visitado[j] == 0) {
+                    if (matriz_arcos[i][j] == 1 && visitado[j] == 0 && mapa[i].tipo != 2) {
                         // O Pai A ou o Pai B passaram por essa rua especifica?
                         if (paiA->pai[j] == i || paiA->pai[i] == j || paiB->pai[j] == i || paiB->pai[i] == j) {
                             cand_origem[num_candidatos] = i;
@@ -278,7 +285,7 @@ struct individuo cruzamento_arvore(struct individuo *paiA, struct individuo *pai
             for (i = 0; i < TAM_MAPA; i++) {
                 if (visitado[i] == 1) {
                     for (j = 0; j < TAM_MAPA; j++) {
-                        if (matriz_arcos[i][j] == 1 && visitado[j] == 0) {
+                        if (matriz_arcos[i][j] == 1 && visitado[j] == 0 && mapa[i].tipo != 2) {
                             cand_origem[num_candidatos] = i;
                             cand_destino[num_candidatos] = j;
                             num_candidatos++;
@@ -326,8 +333,8 @@ void mutacao_arvore(struct individuo *ind) {
 
         // Varre o mapa procurando outras opcoes de ruas para este poste
         for (i = 0; i < TAM_MAPA; i++) {
-            //        1. Existe rua?             2. Vizinho ta na rede?    3. Nao e o pai atual?               4. NAO FORMA CICLO?
-            if (matriz_arcos[no_mutado][i] == 1 && ind->pai[i] != -1 && i != ind->pai[no_mutado] && forma_ciclo(i, no_mutado, ind->pai) == 0) {
+            // Regras: 1. Existe rua?           2. Vizinho ta na rede?     3. Nao e o pai atual?        4. Nao forma ciclo?                 5. O NOVO PAI NAO E CLIENTE?
+            if (matriz_arcos[i][no_mutado] == 1 && ind->pai[i] != -1 && i != ind->pai[no_mutado] && forma_ciclo(i, no_mutado, ind->pai) == 0 && mapa[i].tipo != 2) {
                 vizinhos_validos[num_vizinhos] = i;
                 num_vizinhos++;
             }
@@ -347,7 +354,7 @@ main () {
     int pausa_geracao = -1;
     char resp;
 
-    char nome_instancia[50] = "toy3.txt"; // mudar para ooutros arq
+    char nome_instancia[50] = "cidade_teste.txt"; // mudar para ooutros arq
     char nome_log[100];
     sprintf(nome_log, "log_%s", nome_instancia);
 
@@ -494,12 +501,12 @@ main () {
 
         fprintf(log, "\nMAPA DE CONEXOES (ELITE - INDIVIDUO 0):\n");
 
-        // Substitua NUM_NOS pela variavel que representa o total de postes no seu codigo
-        for (int i = 0; i < 52; i++) {
-            // A condicao abaixo ignora a raiz e os nos desconectados
-            // Ajuste o if caso o seu codigo represente a raiz de uma forma diferente (como 0 ou -1)
-            if (pop[0].pai[i] != -1 && pop[0].pai[i] != i && pop[0].pai[i] != 0) {
-                fprintf(log, "-> Cabo saindo do No %d ate o No %d\n", pop[0].pai[i], i);
+
+        for (int i = 0; i < TAM_MAPA; i++) {
+            // Ignora apenas se o no nao tem pai (raiz ou isolado) ou aponta pra ele mesmo
+            if (pop[0].pai[i] != -1 && pop[0].pai[i] != i) {
+                // Soma +1 para a impressao bater exatamente com os IDs do arquivo Python
+                fprintf(log, "-> Cabo saindo do No %d ate o No %d\n", pop[0].pai[i] + 1, i + 1);
             }
         }
 
