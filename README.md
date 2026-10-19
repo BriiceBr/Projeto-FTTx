@@ -15,7 +15,7 @@ Repositório oficial do projeto de pesquisa desenvolvido na bolsa de estudos do 
 - **Diogo Moi** ([diogo.moi@redes.ufsm.br](mailto:diogo.moi@redes.ufsm.br)) — *Autor Principal*
 - **Viviane Kohler** ([viviane@redes.ufsm.br](mailto:viviane@redes.ufsm.br)) — *Orientadora*
 - **Olinto de Araújo** ([olinto@ctism.ufsm.br](mailto:olinto@ctism.ufsm.br)) — *Coorientador*
-- **Guilherme Dhein** ([gdhein@redes.ufsm.br](mailto:gdhein@redes.ufsm.br)) — *Colaborador*
+- **Guilherme Dhein** ([gdhein@redes.ufsm.br](mailto:gdhein@redes.ufsm.br)) — *Coorientador*
 
 **Publicação:** *Planejamento e Otimização de Redes FTTH Utilizando Algoritmos Genéticos*, apresentado na **Escola Regional de Redes de Computadores (ERRC 2026)**.  
 Consulte o artigo completo em [`docs/Artigo_FTTH_ERRC2026_Moi.pdf`](docs/Artigo_FTTH_ERRC2026_Moi.pdf).
