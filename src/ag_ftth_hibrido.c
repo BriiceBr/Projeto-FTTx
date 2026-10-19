@@ -21,9 +21,9 @@
 #define MAX_TENTATIVAS_DUPLICATA 5
 
 /* Heuristicas construtivas */
-#define TOP_K_INICIAL 7
-#define TOP_K_CRUZAMENTO 7
-#define TOP_K_REPARO 7
+#define TOP_K_INICIAL 5
+#define TOP_K_CRUZAMENTO 5
+#define TOP_K_REPARO 5
 #define MAX_TOP_K_SELECAO 10
 #define TAM_BLOCO 3
 #define MAX_CANDIDATOS (TAM_MAPA * TAM_MAPA)
@@ -65,6 +65,7 @@ struct individuo pop_nova[TAM_P];
 
 int tipo_calculo;
 int total_clientes = 0;
+int total_nos_arquivo = 0;
 
 /* ------------------------------------------------------------ */
 /* Utilitarios                                                   */
@@ -178,8 +179,15 @@ void ler_instancia_fttx(const char nome_arq[]) {
     int lendo_nos = 0;
     int lendo_arcos = 0;
 
+    total_clientes = 0;
+    total_nos_arquivo = 0;
+
     /* globais ja iniciadas em zero, mas zeramos para permitir reuso */
     memset(mapa, 0, sizeof(mapa));
+    for (int i = 0; i < TAM_MAPA; i++) {
+        mapa[i].id = i;
+        mapa[i].tipo = -1;
+    }
     memset(matriz_arcos, 0, sizeof(matriz_arcos));
     memset(matriz_distancias, 0, sizeof(matriz_distancias));
     memset(vizinhos, 0, sizeof(vizinhos));
@@ -192,6 +200,12 @@ void ler_instancia_fttx(const char nome_arq[]) {
         }
 
         if (strstr(linha, "Nodes") != NULL) {
+            sscanf(linha, "Nodes %d", &total_nos_arquivo);
+            if (total_nos_arquivo > TAM_MAPA) {
+                printf("ERRO: o arquivo '%s' tem %d nos, mas TAM_MAPA esta definido como %d.\n",
+                       nome_arq, total_nos_arquivo, TAM_MAPA);
+                exit(1);
+            }
             lendo_nos = 1;
             lendo_arcos = 0;
             continue;
@@ -224,7 +238,7 @@ void ler_instancia_fttx(const char nome_arq[]) {
                     if (id_lido == 1) {
                         mapa[id].tipo = 0;
                     } else if (total_clientes > 0 &&
-id_lido > (TAM_MAPA - total_clientes)) {
+                               id_lido > (total_nos_arquivo - total_clientes)) {
                         mapa[id].tipo = 2;
                     } else {
                         mapa[id].tipo = 1;
@@ -1089,7 +1103,7 @@ void abrir_visualizador_python(const char nome_instancia[],
     fprintf(py, "tempo_execucao = %.12f\n\n", tempo_execucao);
 
     fprintf(py, "posicoes = {\n");
-    for (int i = 0; i < TAM_MAPA; i++) {
+    for (int i = 0; i < total_nos_arquivo; i++) {
         fprintf(py, "    %d: (%.12f, %.12f),\n",
                 mapa[i].id + 1,
                 mapa[i].y,
@@ -1098,25 +1112,25 @@ void abrir_visualizador_python(const char nome_instancia[],
     fprintf(py, "}\n\n");
 
     fprintf(py, "lista_olt = [");
-    for (int i = 0; i < TAM_MAPA; i++) {
+    for (int i = 0; i < total_nos_arquivo; i++) {
         if (mapa[i].tipo == 0) fprintf(py, "%d,", mapa[i].id + 1);
     }
     fprintf(py, "]\n");
 
     fprintf(py, "lista_postes = [");
-    for (int i = 0; i < TAM_MAPA; i++) {
+    for (int i = 0; i < total_nos_arquivo; i++) {
         if (mapa[i].tipo == 1) fprintf(py, "%d,", mapa[i].id + 1);
     }
     fprintf(py, "]\n");
 
     fprintf(py, "lista_clientes = [");
-    for (int i = 0; i < TAM_MAPA; i++) {
+    for (int i = 0; i < total_nos_arquivo; i++) {
         if (mapa[i].tipo == 2) fprintf(py, "%d,", mapa[i].id + 1);
     }
     fprintf(py, "]\n\n");
 
     fprintf(py, "conexoes = [\n");
-    for (int i = 0; i < TAM_MAPA; i++) {
+    for (int i = 0; i < total_nos_arquivo; i++) {
         if (melhor_global->pai[i] != -1 &&
             melhor_global->pai[i] != i) {
             fprintf(py, "    (%d, %d),\n",
@@ -1544,7 +1558,7 @@ int main(int argc, char *argv[]) {
 
     printf("\n--- MAPA DE CONEXOES (MELHOR INDIVIDUO) ---\n");
 
-    for (int k = 0; k < TAM_MAPA; k++) {
+    for (int k = 0; k < total_nos_arquivo; k++) {
         if (melhor_global.pai[k] != -1 &&
             melhor_global.pai[k] != k) {
             printf(" -> Cabo saindo do No %d ate o No %d\n",
@@ -1587,7 +1601,7 @@ int main(int argc, char *argv[]) {
         fprintf(log, "----------------------------------------\n");
         fprintf(log, "MAPA DE CONEXOES (ELITE)\n");
 
-        for (int j = 0; j < TAM_MAPA; j++) {
+        for (int j = 0; j < total_nos_arquivo; j++) {
             if (melhor_global.pai[j] != -1 &&
                 melhor_global.pai[j] != j) {
                 fprintf(log,

@@ -7,7 +7,7 @@
 #define RAIO_TERRA 6371000.0
 #define PI 3.14159265358979323846
 
-#define TAM_MAPA 175
+#define TAM_MAPA 367
 #define TAM_P 100
 
 #define TAX_MUTACAO_POP_PADRAO 20
@@ -57,6 +57,7 @@ struct individuo pop_nova[TAM_P];
 
 int tipo_calculo;
 int total_clientes = 0;
+int total_nos_arquivo = 0;
 
 /* ------------------------------------------------------------ */
 /* Utilitarios                                                   */
@@ -169,8 +170,13 @@ void ler_instancia_fttx(const char nome_arq[]) {
     int lendo_nos = 0;
     int lendo_arcos = 0;
     total_clientes = 0;
+    total_nos_arquivo = 0;
 
     memset(mapa, 0, sizeof(mapa));
+    for (int i = 0; i < TAM_MAPA; i++) {
+        mapa[i].id = i;
+        mapa[i].tipo = -1;
+    }
     memset(matriz_arcos, 0, sizeof(matriz_arcos));
     memset(matriz_distancias, 0, sizeof(matriz_distancias));
     memset(vizinhos, 0, sizeof(vizinhos));
@@ -183,6 +189,12 @@ void ler_instancia_fttx(const char nome_arq[]) {
         }
 
         if (strstr(linha, "Nodes") != NULL) {
+            sscanf(linha, "Nodes %d", &total_nos_arquivo);
+            if (total_nos_arquivo > TAM_MAPA) {
+                printf("ERRO: o arquivo '%s' tem %d nos, mas TAM_MAPA esta definido como %d.\n",
+                       nome_arq, total_nos_arquivo, TAM_MAPA);
+                exit(1);
+            }
             lendo_nos = 1;
             lendo_arcos = 0;
             continue;
@@ -214,7 +226,7 @@ void ler_instancia_fttx(const char nome_arq[]) {
 
                     if (id_lido == 1) {
                         mapa[id].tipo = 0;
-                    } else if (total_clientes > 0 && id_lido > (TAM_MAPA - total_clientes)) {
+                    } else if (total_clientes > 0 && id_lido > (total_nos_arquivo - total_clientes)) {
                         mapa[id].tipo = 2;
                     } else {
                         mapa[id].tipo = 1;
