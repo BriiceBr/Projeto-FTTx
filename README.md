@@ -17,9 +17,6 @@ Repositório oficial do projeto de pesquisa desenvolvido na bolsa de estudos do 
 - **Olinto de Araújo** ([olinto@ctism.ufsm.br](mailto:olinto@ctism.ufsm.br)) — *Coorientador*
 - **Guilherme Dhein** ([gdhein@redes.ufsm.br](mailto:gdhein@redes.ufsm.br)) — *Coorientador*
 
-**Publicação:** *Planejamento e Otimização de Redes FTTH Utilizando Algoritmos Genéticos*, apresentado na **Escola Regional de Redes de Computadores (ERRC 2026)**.  
-Consulte o artigo completo em [`docs/Artigo_FTTH_ERRC2026_Moi.pdf`](docs/Artigo_FTTH_ERRC2026_Moi.pdf).
-
 ---
 
 ## 📌 Visão Geral do Problema
