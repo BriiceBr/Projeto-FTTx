@@ -1,0 +1,43 @@
+name: CI - Compilação e Validação do Simulador FTTx
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do Repositório
+      uses: actions/checkout@v4
+
+    - name: Configurar Ambiente e Dependências
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y gcc make python3 python3-pip
+
+    - name: Compilar Simulador Principal (AG Híbrido)
+      run: |
+        cd src
+        gcc -O3 ag_ftth_hibrido.c -o ag_ftth_hibrido -lm
+
+    - name: Compilar Códigos dos Experimentos
+      run: |
+        gcc -O3 experimentos/selecao_torneio_vs_roleta/ag_ftth_testes_roleta_x_torneio.c -o teste_selecao -lm
+        gcc -O3 experimentos/varredura_mutacao/teste_taxas_mutacao.c -o teste_mutacao -lm
+
+    - name: Compilar Códigos Históricos
+      run: |
+        gcc historico/01_aprendizado_ga_tsp/tsp_berlin52/ExemploModelo.c -o modelo_berlin -lm
+        gcc "historico/01_aprendizado_ga_tsp/tsp_4000_postes/CodTSP.c" -o tsp_4000 -lm
+        gcc historico/02_primeiro_simulador_fttx/Simulador_FTTx.c -o primeiro_simulador -lm
+
+    - name: Executar Validação Automatizada (Teste de Fumaça)
+      run: |
+        cd src
+        # Executa 5 geracoes com Torneio (1), Mut Pop 5%, Mut Gene 1%, Pitagoras (1), semente 12345
+        printf "toy3.txt\n5\n1\n5\n1\n1\n12345\n" | ./ag_ftth_hibrido

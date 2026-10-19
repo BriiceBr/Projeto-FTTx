@@ -1,0 +1,2834 @@
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 30%
+- Total de Geracoes: 100
+- Metodo de Selecao: Torneio
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 9394.21 metros
+- Distancia na geracao final: 9394.21 metros
+- Tempo computacional: 6.761000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 46 ate o No 47
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 61 ate o No 62
+-> Cabo saindo do No 62 ate o No 63
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 79
+-> Cabo saindo do No 79 ate o No 80
+-> Cabo saindo do No 80 ate o No 81
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 28 ate o No 112
+-> Cabo saindo do No 32 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 28 ate o No 115
+-> Cabo saindo do No 32 ate o No 116
+-> Cabo saindo do No 34 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 53 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 54 ate o No 122
+-> Cabo saindo do No 53 ate o No 123
+-> Cabo saindo do No 51 ate o No 124
+-> Cabo saindo do No 70 ate o No 125
+-> Cabo saindo do No 58 ate o No 126
+-> Cabo saindo do No 28 ate o No 127
+-> Cabo saindo do No 68 ate o No 128
+-> Cabo saindo do No 59 ate o No 129
+-> Cabo saindo do No 69 ate o No 130
+-> Cabo saindo do No 63 ate o No 131
+-> Cabo saindo do No 53 ate o No 132
+-> Cabo saindo do No 53 ate o No 133
+-> Cabo saindo do No 67 ate o No 134
+-> Cabo saindo do No 64 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 59 ate o No 138
+-> Cabo saindo do No 57 ate o No 139
+-> Cabo saindo do No 70 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 82 ate o No 143
+-> Cabo saindo do No 83 ate o No 144
+-> Cabo saindo do No 85 ate o No 145
+-> Cabo saindo do No 87 ate o No 146
+-> Cabo saindo do No 87 ate o No 147
+-> Cabo saindo do No 89 ate o No 148
+-> Cabo saindo do No 94 ate o No 149
+-> Cabo saindo do No 81 ate o No 150
+-> Cabo saindo do No 80 ate o No 151
+-> Cabo saindo do No 82 ate o No 152
+-> Cabo saindo do No 96 ate o No 153
+-> Cabo saindo do No 95 ate o No 154
+-> Cabo saindo do No 93 ate o No 155
+-> Cabo saindo do No 88 ate o No 156
+-> Cabo saindo do No 96 ate o No 157
+-> Cabo saindo do No 92 ate o No 158
+-> Cabo saindo do No 87 ate o No 159
+-> Cabo saindo do No 96 ate o No 160
+-> Cabo saindo do No 72 ate o No 161
+-> Cabo saindo do No 70 ate o No 162
+-> Cabo saindo do No 34 ate o No 163
+-> Cabo saindo do No 35 ate o No 164
+-> Cabo saindo do No 34 ate o No 165
+-> Cabo saindo do No 32 ate o No 166
+-> Cabo saindo do No 37 ate o No 167
+-> Cabo saindo do No 51 ate o No 168
+-> Cabo saindo do No 47 ate o No 169
+-> Cabo saindo do No 28 ate o No 170
+-> Cabo saindo do No 92 ate o No 171
+-> Cabo saindo do No 96 ate o No 172
+-> Cabo saindo do No 100 ate o No 173
+-> Cabo saindo do No 101 ate o No 174
+-> Cabo saindo do No 103 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 30%
+- Total de Geracoes: 100
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 9070.45 metros
+- Distancia na geracao final: 9070.45 metros
+- Tempo computacional: 12.831000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 39
+-> Cabo saindo do No 39 ate o No 40
+-> Cabo saindo do No 40 ate o No 41
+-> Cabo saindo do No 41 ate o No 42
+-> Cabo saindo do No 42 ate o No 43
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 46 ate o No 47
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 61 ate o No 62
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 79
+-> Cabo saindo do No 79 ate o No 80
+-> Cabo saindo do No 80 ate o No 81
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 32 ate o No 112
+-> Cabo saindo do No 34 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 34 ate o No 115
+-> Cabo saindo do No 34 ate o No 116
+-> Cabo saindo do No 37 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 52 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 54 ate o No 122
+-> Cabo saindo do No 53 ate o No 123
+-> Cabo saindo do No 51 ate o No 124
+-> Cabo saindo do No 70 ate o No 125
+-> Cabo saindo do No 58 ate o No 126
+-> Cabo saindo do No 27 ate o No 127
+-> Cabo saindo do No 69 ate o No 128
+-> Cabo saindo do No 58 ate o No 129
+-> Cabo saindo do No 61 ate o No 130
+-> Cabo saindo do No 62 ate o No 131
+-> Cabo saindo do No 55 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 57 ate o No 134
+-> Cabo saindo do No 64 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 59 ate o No 138
+-> Cabo saindo do No 55 ate o No 139
+-> Cabo saindo do No 70 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 78 ate o No 143
+-> Cabo saindo do No 78 ate o No 144
+-> Cabo saindo do No 83 ate o No 145
+-> Cabo saindo do No 84 ate o No 146
+-> Cabo saindo do No 85 ate o No 147
+-> Cabo saindo do No 88 ate o No 148
+-> Cabo saindo do No 92 ate o No 149
+-> Cabo saindo do No 81 ate o No 150
+-> Cabo saindo do No 77 ate o No 151
+-> Cabo saindo do No 78 ate o No 152
+-> Cabo saindo do No 96 ate o No 153
+-> Cabo saindo do No 92 ate o No 154
+-> Cabo saindo do No 92 ate o No 155
+-> Cabo saindo do No 88 ate o No 156
+-> Cabo saindo do No 96 ate o No 157
+-> Cabo saindo do No 90 ate o No 158
+-> Cabo saindo do No 85 ate o No 159
+-> Cabo saindo do No 96 ate o No 160
+-> Cabo saindo do No 71 ate o No 161
+-> Cabo saindo do No 71 ate o No 162
+-> Cabo saindo do No 41 ate o No 163
+-> Cabo saindo do No 43 ate o No 164
+-> Cabo saindo do No 45 ate o No 165
+-> Cabo saindo do No 37 ate o No 166
+-> Cabo saindo do No 50 ate o No 167
+-> Cabo saindo do No 50 ate o No 168
+-> Cabo saindo do No 47 ate o No 169
+-> Cabo saindo do No 30 ate o No 170
+-> Cabo saindo do No 90 ate o No 171
+-> Cabo saindo do No 95 ate o No 172
+-> Cabo saindo do No 99 ate o No 173
+-> Cabo saindo do No 99 ate o No 174
+-> Cabo saindo do No 103 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 30%
+- Total de Geracoes: 1000
+- Metodo de Selecao: Torneio
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 9516.18 metros
+- Distancia na geracao final: 9516.18 metros
+- Tempo computacional: 197.355000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 39
+-> Cabo saindo do No 39 ate o No 40
+-> Cabo saindo do No 40 ate o No 41
+-> Cabo saindo do No 41 ate o No 42
+-> Cabo saindo do No 42 ate o No 43
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 46 ate o No 47
+-> Cabo saindo do No 47 ate o No 48
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 61 ate o No 62
+-> Cabo saindo do No 62 ate o No 63
+-> Cabo saindo do No 63 ate o No 64
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 28 ate o No 112
+-> Cabo saindo do No 36 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 36 ate o No 115
+-> Cabo saindo do No 32 ate o No 116
+-> Cabo saindo do No 40 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 53 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 54 ate o No 122
+-> Cabo saindo do No 52 ate o No 123
+-> Cabo saindo do No 52 ate o No 124
+-> Cabo saindo do No 70 ate o No 125
+-> Cabo saindo do No 59 ate o No 126
+-> Cabo saindo do No 28 ate o No 127
+-> Cabo saindo do No 69 ate o No 128
+-> Cabo saindo do No 56 ate o No 129
+-> Cabo saindo do No 69 ate o No 130
+-> Cabo saindo do No 62 ate o No 131
+-> Cabo saindo do No 55 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 67 ate o No 134
+-> Cabo saindo do No 64 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 64 ate o No 137
+-> Cabo saindo do No 59 ate o No 138
+-> Cabo saindo do No 56 ate o No 139
+-> Cabo saindo do No 70 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 76 ate o No 143
+-> Cabo saindo do No 82 ate o No 144
+-> Cabo saindo do No 85 ate o No 145
+-> Cabo saindo do No 85 ate o No 146
+-> Cabo saindo do No 85 ate o No 147
+-> Cabo saindo do No 88 ate o No 148
+-> Cabo saindo do No 91 ate o No 149
+-> Cabo saindo do No 75 ate o No 150
+-> Cabo saindo do No 74 ate o No 151
+-> Cabo saindo do No 76 ate o No 152
+-> Cabo saindo do No 94 ate o No 153
+-> Cabo saindo do No 92 ate o No 154
+-> Cabo saindo do No 90 ate o No 155
+-> Cabo saindo do No 88 ate o No 156
+-> Cabo saindo do No 96 ate o No 157
+-> Cabo saindo do No 90 ate o No 158
+-> Cabo saindo do No 87 ate o No 159
+-> Cabo saindo do No 95 ate o No 160
+-> Cabo saindo do No 72 ate o No 161
+-> Cabo saindo do No 71 ate o No 162
+-> Cabo saindo do No 41 ate o No 163
+-> Cabo saindo do No 43 ate o No 164
+-> Cabo saindo do No 36 ate o No 165
+-> Cabo saindo do No 36 ate o No 166
+-> Cabo saindo do No 50 ate o No 167
+-> Cabo saindo do No 51 ate o No 168
+-> Cabo saindo do No 48 ate o No 169
+-> Cabo saindo do No 30 ate o No 170
+-> Cabo saindo do No 90 ate o No 171
+-> Cabo saindo do No 93 ate o No 172
+-> Cabo saindo do No 102 ate o No 173
+-> Cabo saindo do No 96 ate o No 174
+-> Cabo saindo do No 103 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 5%
+- Total de Geracoes: 100
+- Metodo de Selecao: Torneio
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 9414.75 metros
+- Distancia na geracao final: 9414.75 metros
+- Tempo computacional: 13.035000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 39
+-> Cabo saindo do No 39 ate o No 40
+-> Cabo saindo do No 40 ate o No 41
+-> Cabo saindo do No 41 ate o No 42
+-> Cabo saindo do No 42 ate o No 43
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 46 ate o No 47
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 61 ate o No 62
+-> Cabo saindo do No 62 ate o No 63
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 79
+-> Cabo saindo do No 79 ate o No 80
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 29 ate o No 112
+-> Cabo saindo do No 37 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 28 ate o No 115
+-> Cabo saindo do No 30 ate o No 116
+-> Cabo saindo do No 50 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 53 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 54 ate o No 122
+-> Cabo saindo do No 53 ate o No 123
+-> Cabo saindo do No 51 ate o No 124
+-> Cabo saindo do No 69 ate o No 125
+-> Cabo saindo do No 57 ate o No 126
+-> Cabo saindo do No 27 ate o No 127
+-> Cabo saindo do No 67 ate o No 128
+-> Cabo saindo do No 58 ate o No 129
+-> Cabo saindo do No 69 ate o No 130
+-> Cabo saindo do No 63 ate o No 131
+-> Cabo saindo do No 54 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 57 ate o No 134
+-> Cabo saindo do No 64 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 66 ate o No 138
+-> Cabo saindo do No 56 ate o No 139
+-> Cabo saindo do No 70 ate o No 140
+-> Cabo saindo do No 72 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 82 ate o No 143
+-> Cabo saindo do No 84 ate o No 144
+-> Cabo saindo do No 85 ate o No 145
+-> Cabo saindo do No 86 ate o No 146
+-> Cabo saindo do No 87 ate o No 147
+-> Cabo saindo do No 89 ate o No 148
+-> Cabo saindo do No 94 ate o No 149
+-> Cabo saindo do No 80 ate o No 150
+-> Cabo saindo do No 80 ate o No 151
+-> Cabo saindo do No 82 ate o No 152
+-> Cabo saindo do No 94 ate o No 153
+-> Cabo saindo do No 92 ate o No 154
+-> Cabo saindo do No 92 ate o No 155
+-> Cabo saindo do No 89 ate o No 156
+-> Cabo saindo do No 93 ate o No 157
+-> Cabo saindo do No 91 ate o No 158
+-> Cabo saindo do No 87 ate o No 159
+-> Cabo saindo do No 94 ate o No 160
+-> Cabo saindo do No 71 ate o No 161
+-> Cabo saindo do No 71 ate o No 162
+-> Cabo saindo do No 42 ate o No 163
+-> Cabo saindo do No 43 ate o No 164
+-> Cabo saindo do No 45 ate o No 165
+-> Cabo saindo do No 32 ate o No 166
+-> Cabo saindo do No 50 ate o No 167
+-> Cabo saindo do No 51 ate o No 168
+-> Cabo saindo do No 47 ate o No 169
+-> Cabo saindo do No 28 ate o No 170
+-> Cabo saindo do No 91 ate o No 171
+-> Cabo saindo do No 94 ate o No 172
+-> Cabo saindo do No 97 ate o No 173
+-> Cabo saindo do No 98 ate o No 174
+-> Cabo saindo do No 103 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 5%
+- Total de Geracoes: 1000
+- Metodo de Selecao: Torneio
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 9789.72 metros
+- Distancia na geracao final: 9789.72 metros
+- Tempo computacional: 128.089000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 79
+-> Cabo saindo do No 79 ate o No 80
+-> Cabo saindo do No 80 ate o No 81
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 28 ate o No 112
+-> Cabo saindo do No 34 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 28 ate o No 115
+-> Cabo saindo do No 30 ate o No 116
+-> Cabo saindo do No 35 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 52 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 54 ate o No 122
+-> Cabo saindo do No 52 ate o No 123
+-> Cabo saindo do No 51 ate o No 124
+-> Cabo saindo do No 70 ate o No 125
+-> Cabo saindo do No 56 ate o No 126
+-> Cabo saindo do No 28 ate o No 127
+-> Cabo saindo do No 67 ate o No 128
+-> Cabo saindo do No 56 ate o No 129
+-> Cabo saindo do No 61 ate o No 130
+-> Cabo saindo do No 61 ate o No 131
+-> Cabo saindo do No 55 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 58 ate o No 134
+-> Cabo saindo do No 64 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 58 ate o No 138
+-> Cabo saindo do No 57 ate o No 139
+-> Cabo saindo do No 70 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 83 ate o No 143
+-> Cabo saindo do No 84 ate o No 144
+-> Cabo saindo do No 85 ate o No 145
+-> Cabo saindo do No 86 ate o No 146
+-> Cabo saindo do No 87 ate o No 147
+-> Cabo saindo do No 87 ate o No 148
+-> Cabo saindo do No 94 ate o No 149
+-> Cabo saindo do No 81 ate o No 150
+-> Cabo saindo do No 76 ate o No 151
+-> Cabo saindo do No 77 ate o No 152
+-> Cabo saindo do No 95 ate o No 153
+-> Cabo saindo do No 94 ate o No 154
+-> Cabo saindo do No 91 ate o No 155
+-> Cabo saindo do No 88 ate o No 156
+-> Cabo saindo do No 96 ate o No 157
+-> Cabo saindo do No 89 ate o No 158
+-> Cabo saindo do No 87 ate o No 159
+-> Cabo saindo do No 95 ate o No 160
+-> Cabo saindo do No 71 ate o No 161
+-> Cabo saindo do No 71 ate o No 162
+-> Cabo saindo do No 36 ate o No 163
+-> Cabo saindo do No 34 ate o No 164
+-> Cabo saindo do No 37 ate o No 165
+-> Cabo saindo do No 34 ate o No 166
+-> Cabo saindo do No 36 ate o No 167
+-> Cabo saindo do No 37 ate o No 168
+-> Cabo saindo do No 46 ate o No 169
+-> Cabo saindo do No 30 ate o No 170
+-> Cabo saindo do No 90 ate o No 171
+-> Cabo saindo do No 95 ate o No 172
+-> Cabo saindo do No 96 ate o No 173
+-> Cabo saindo do No 97 ate o No 174
+-> Cabo saindo do No 103 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 5%
+- Total de Geracoes: 1000
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 9901.55 metros
+- Distancia na geracao final: 9901.55 metros
+- Tempo computacional: 125.305000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 46 ate o No 47
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 61 ate o No 62
+-> Cabo saindo do No 62 ate o No 63
+-> Cabo saindo do No 63 ate o No 64
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 79
+-> Cabo saindo do No 79 ate o No 80
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 28 ate o No 112
+-> Cabo saindo do No 32 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 28 ate o No 115
+-> Cabo saindo do No 28 ate o No 116
+-> Cabo saindo do No 37 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 52 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 53 ate o No 122
+-> Cabo saindo do No 52 ate o No 123
+-> Cabo saindo do No 51 ate o No 124
+-> Cabo saindo do No 69 ate o No 125
+-> Cabo saindo do No 60 ate o No 126
+-> Cabo saindo do No 27 ate o No 127
+-> Cabo saindo do No 68 ate o No 128
+-> Cabo saindo do No 59 ate o No 129
+-> Cabo saindo do No 69 ate o No 130
+-> Cabo saindo do No 62 ate o No 131
+-> Cabo saindo do No 55 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 57 ate o No 134
+-> Cabo saindo do No 64 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 59 ate o No 138
+-> Cabo saindo do No 57 ate o No 139
+-> Cabo saindo do No 70 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 82 ate o No 143
+-> Cabo saindo do No 83 ate o No 144
+-> Cabo saindo do No 83 ate o No 145
+-> Cabo saindo do No 82 ate o No 146
+-> Cabo saindo do No 84 ate o No 147
+-> Cabo saindo do No 87 ate o No 148
+-> Cabo saindo do No 94 ate o No 149
+-> Cabo saindo do No 75 ate o No 150
+-> Cabo saindo do No 80 ate o No 151
+-> Cabo saindo do No 77 ate o No 152
+-> Cabo saindo do No 96 ate o No 153
+-> Cabo saindo do No 94 ate o No 154
+-> Cabo saindo do No 93 ate o No 155
+-> Cabo saindo do No 87 ate o No 156
+-> Cabo saindo do No 95 ate o No 157
+-> Cabo saindo do No 90 ate o No 158
+-> Cabo saindo do No 85 ate o No 159
+-> Cabo saindo do No 96 ate o No 160
+-> Cabo saindo do No 71 ate o No 161
+-> Cabo saindo do No 71 ate o No 162
+-> Cabo saindo do No 37 ate o No 163
+-> Cabo saindo do No 34 ate o No 164
+-> Cabo saindo do No 32 ate o No 165
+-> Cabo saindo do No 32 ate o No 166
+-> Cabo saindo do No 36 ate o No 167
+-> Cabo saindo do No 50 ate o No 168
+-> Cabo saindo do No 47 ate o No 169
+-> Cabo saindo do No 28 ate o No 170
+-> Cabo saindo do No 91 ate o No 171
+-> Cabo saindo do No 95 ate o No 172
+-> Cabo saindo do No 95 ate o No 173
+-> Cabo saindo do No 100 ate o No 174
+-> Cabo saindo do No 103 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 5%
+- Total de Geracoes: 2000
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 9776.66 metros
+- Distancia na geracao final: 9776.66 metros
+- Tempo computacional: 38.217000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 39
+-> Cabo saindo do No 39 ate o No 40
+-> Cabo saindo do No 40 ate o No 41
+-> Cabo saindo do No 41 ate o No 42
+-> Cabo saindo do No 42 ate o No 43
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 46 ate o No 47
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 64 ate o No 63
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 30 ate o No 112
+-> Cabo saindo do No 33 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 33 ate o No 115
+-> Cabo saindo do No 42 ate o No 116
+-> Cabo saindo do No 49 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 52 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 54 ate o No 122
+-> Cabo saindo do No 52 ate o No 123
+-> Cabo saindo do No 52 ate o No 124
+-> Cabo saindo do No 69 ate o No 125
+-> Cabo saindo do No 58 ate o No 126
+-> Cabo saindo do No 33 ate o No 127
+-> Cabo saindo do No 68 ate o No 128
+-> Cabo saindo do No 56 ate o No 129
+-> Cabo saindo do No 61 ate o No 130
+-> Cabo saindo do No 63 ate o No 131
+-> Cabo saindo do No 56 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 67 ate o No 134
+-> Cabo saindo do No 64 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 59 ate o No 138
+-> Cabo saindo do No 57 ate o No 139
+-> Cabo saindo do No 70 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 70 ate o No 142
+-> Cabo saindo do No 77 ate o No 143
+-> Cabo saindo do No 78 ate o No 144
+-> Cabo saindo do No 84 ate o No 145
+-> Cabo saindo do No 84 ate o No 146
+-> Cabo saindo do No 84 ate o No 147
+-> Cabo saindo do No 85 ate o No 148
+-> Cabo saindo do No 91 ate o No 149
+-> Cabo saindo do No 75 ate o No 150
+-> Cabo saindo do No 77 ate o No 151
+-> Cabo saindo do No 76 ate o No 152
+-> Cabo saindo do No 92 ate o No 153
+-> Cabo saindo do No 91 ate o No 154
+-> Cabo saindo do No 90 ate o No 155
+-> Cabo saindo do No 85 ate o No 156
+-> Cabo saindo do No 93 ate o No 157
+-> Cabo saindo do No 88 ate o No 158
+-> Cabo saindo do No 85 ate o No 159
+-> Cabo saindo do No 94 ate o No 160
+-> Cabo saindo do No 72 ate o No 161
+-> Cabo saindo do No 70 ate o No 162
+-> Cabo saindo do No 42 ate o No 163
+-> Cabo saindo do No 43 ate o No 164
+-> Cabo saindo do No 37 ate o No 165
+-> Cabo saindo do No 49 ate o No 166
+-> Cabo saindo do No 50 ate o No 167
+-> Cabo saindo do No 50 ate o No 168
+-> Cabo saindo do No 47 ate o No 169
+-> Cabo saindo do No 32 ate o No 170
+-> Cabo saindo do No 89 ate o No 171
+-> Cabo saindo do No 91 ate o No 172
+-> Cabo saindo do No 95 ate o No 173
+-> Cabo saindo do No 97 ate o No 174
+-> Cabo saindo do No 103 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 5%
+- Total de Geracoes: 2000
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 10130.83 metros
+- Distancia na geracao final: 10130.83 metros
+- Tempo computacional: 66.719000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 39
+-> Cabo saindo do No 39 ate o No 40
+-> Cabo saindo do No 40 ate o No 41
+-> Cabo saindo do No 41 ate o No 42
+-> Cabo saindo do No 42 ate o No 43
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 46 ate o No 47
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 61 ate o No 62
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 64 ate o No 65
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 79
+-> Cabo saindo do No 79 ate o No 80
+-> Cabo saindo do No 80 ate o No 81
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 28 ate o No 112
+-> Cabo saindo do No 34 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 32 ate o No 115
+-> Cabo saindo do No 32 ate o No 116
+-> Cabo saindo do No 37 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 52 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 54 ate o No 122
+-> Cabo saindo do No 52 ate o No 123
+-> Cabo saindo do No 52 ate o No 124
+-> Cabo saindo do No 69 ate o No 125
+-> Cabo saindo do No 60 ate o No 126
+-> Cabo saindo do No 27 ate o No 127
+-> Cabo saindo do No 68 ate o No 128
+-> Cabo saindo do No 56 ate o No 129
+-> Cabo saindo do No 61 ate o No 130
+-> Cabo saindo do No 62 ate o No 131
+-> Cabo saindo do No 55 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 67 ate o No 134
+-> Cabo saindo do No 65 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 59 ate o No 138
+-> Cabo saindo do No 56 ate o No 139
+-> Cabo saindo do No 70 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 77 ate o No 143
+-> Cabo saindo do No 83 ate o No 144
+-> Cabo saindo do No 83 ate o No 145
+-> Cabo saindo do No 84 ate o No 146
+-> Cabo saindo do No 85 ate o No 147
+-> Cabo saindo do No 88 ate o No 148
+-> Cabo saindo do No 92 ate o No 149
+-> Cabo saindo do No 81 ate o No 150
+-> Cabo saindo do No 76 ate o No 151
+-> Cabo saindo do No 76 ate o No 152
+-> Cabo saindo do No 93 ate o No 153
+-> Cabo saindo do No 92 ate o No 154
+-> Cabo saindo do No 91 ate o No 155
+-> Cabo saindo do No 87 ate o No 156
+-> Cabo saindo do No 93 ate o No 157
+-> Cabo saindo do No 88 ate o No 158
+-> Cabo saindo do No 87 ate o No 159
+-> Cabo saindo do No 94 ate o No 160
+-> Cabo saindo do No 72 ate o No 161
+-> Cabo saindo do No 71 ate o No 162
+-> Cabo saindo do No 42 ate o No 163
+-> Cabo saindo do No 43 ate o No 164
+-> Cabo saindo do No 45 ate o No 165
+-> Cabo saindo do No 37 ate o No 166
+-> Cabo saindo do No 37 ate o No 167
+-> Cabo saindo do No 51 ate o No 168
+-> Cabo saindo do No 47 ate o No 169
+-> Cabo saindo do No 28 ate o No 170
+-> Cabo saindo do No 89 ate o No 171
+-> Cabo saindo do No 92 ate o No 172
+-> Cabo saindo do No 95 ate o No 173
+-> Cabo saindo do No 96 ate o No 174
+-> Cabo saindo do No 103 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 5%
+- Total de Geracoes: 2000
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 9782.17 metros
+- Distancia na geracao final: 9782.17 metros
+- Tempo computacional: 63.367000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 46 ate o No 47
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 64 ate o No 63
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 79
+-> Cabo saindo do No 79 ate o No 80
+-> Cabo saindo do No 80 ate o No 81
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 30 ate o No 112
+-> Cabo saindo do No 33 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 33 ate o No 115
+-> Cabo saindo do No 30 ate o No 116
+-> Cabo saindo do No 37 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 52 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 53 ate o No 122
+-> Cabo saindo do No 52 ate o No 123
+-> Cabo saindo do No 51 ate o No 124
+-> Cabo saindo do No 69 ate o No 125
+-> Cabo saindo do No 55 ate o No 126
+-> Cabo saindo do No 28 ate o No 127
+-> Cabo saindo do No 56 ate o No 128
+-> Cabo saindo do No 55 ate o No 129
+-> Cabo saindo do No 61 ate o No 130
+-> Cabo saindo do No 63 ate o No 131
+-> Cabo saindo do No 54 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 55 ate o No 134
+-> Cabo saindo do No 64 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 55 ate o No 138
+-> Cabo saindo do No 56 ate o No 139
+-> Cabo saindo do No 70 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 83 ate o No 143
+-> Cabo saindo do No 83 ate o No 144
+-> Cabo saindo do No 85 ate o No 145
+-> Cabo saindo do No 86 ate o No 146
+-> Cabo saindo do No 87 ate o No 147
+-> Cabo saindo do No 88 ate o No 148
+-> Cabo saindo do No 94 ate o No 149
+-> Cabo saindo do No 81 ate o No 150
+-> Cabo saindo do No 80 ate o No 151
+-> Cabo saindo do No 78 ate o No 152
+-> Cabo saindo do No 95 ate o No 153
+-> Cabo saindo do No 94 ate o No 154
+-> Cabo saindo do No 94 ate o No 155
+-> Cabo saindo do No 89 ate o No 156
+-> Cabo saindo do No 95 ate o No 157
+-> Cabo saindo do No 90 ate o No 158
+-> Cabo saindo do No 87 ate o No 159
+-> Cabo saindo do No 94 ate o No 160
+-> Cabo saindo do No 72 ate o No 161
+-> Cabo saindo do No 71 ate o No 162
+-> Cabo saindo do No 34 ate o No 163
+-> Cabo saindo do No 34 ate o No 164
+-> Cabo saindo do No 33 ate o No 165
+-> Cabo saindo do No 49 ate o No 166
+-> Cabo saindo do No 50 ate o No 167
+-> Cabo saindo do No 50 ate o No 168
+-> Cabo saindo do No 47 ate o No 169
+-> Cabo saindo do No 30 ate o No 170
+-> Cabo saindo do No 91 ate o No 171
+-> Cabo saindo do No 94 ate o No 172
+-> Cabo saindo do No 95 ate o No 173
+-> Cabo saindo do No 98 ate o No 174
+-> Cabo saindo do No 103 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 5%
+- Total de Geracoes: 2000
+- Metodo de Selecao: Torneio
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 9862.73 metros
+- Distancia na geracao final: 9862.73 metros
+- Tempo computacional: 63.753000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 39
+-> Cabo saindo do No 39 ate o No 40
+-> Cabo saindo do No 40 ate o No 41
+-> Cabo saindo do No 41 ate o No 42
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 46 ate o No 47
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 64 ate o No 63
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 64 ate o No 65
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 28 ate o No 112
+-> Cabo saindo do No 32 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 32 ate o No 115
+-> Cabo saindo do No 32 ate o No 116
+-> Cabo saindo do No 49 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 52 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 54 ate o No 122
+-> Cabo saindo do No 53 ate o No 123
+-> Cabo saindo do No 51 ate o No 124
+-> Cabo saindo do No 69 ate o No 125
+-> Cabo saindo do No 59 ate o No 126
+-> Cabo saindo do No 27 ate o No 127
+-> Cabo saindo do No 68 ate o No 128
+-> Cabo saindo do No 59 ate o No 129
+-> Cabo saindo do No 69 ate o No 130
+-> Cabo saindo do No 63 ate o No 131
+-> Cabo saindo do No 53 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 67 ate o No 134
+-> Cabo saindo do No 65 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 54 ate o No 138
+-> Cabo saindo do No 54 ate o No 139
+-> Cabo saindo do No 70 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 75 ate o No 143
+-> Cabo saindo do No 82 ate o No 144
+-> Cabo saindo do No 82 ate o No 145
+-> Cabo saindo do No 86 ate o No 146
+-> Cabo saindo do No 86 ate o No 147
+-> Cabo saindo do No 87 ate o No 148
+-> Cabo saindo do No 94 ate o No 149
+-> Cabo saindo do No 74 ate o No 150
+-> Cabo saindo do No 74 ate o No 151
+-> Cabo saindo do No 77 ate o No 152
+-> Cabo saindo do No 96 ate o No 153
+-> Cabo saindo do No 94 ate o No 154
+-> Cabo saindo do No 93 ate o No 155
+-> Cabo saindo do No 88 ate o No 156
+-> Cabo saindo do No 97 ate o No 157
+-> Cabo saindo do No 89 ate o No 158
+-> Cabo saindo do No 87 ate o No 159
+-> Cabo saindo do No 96 ate o No 160
+-> Cabo saindo do No 72 ate o No 161
+-> Cabo saindo do No 71 ate o No 162
+-> Cabo saindo do No 42 ate o No 163
+-> Cabo saindo do No 33 ate o No 164
+-> Cabo saindo do No 33 ate o No 165
+-> Cabo saindo do No 33 ate o No 166
+-> Cabo saindo do No 49 ate o No 167
+-> Cabo saindo do No 50 ate o No 168
+-> Cabo saindo do No 47 ate o No 169
+-> Cabo saindo do No 32 ate o No 170
+-> Cabo saindo do No 93 ate o No 171
+-> Cabo saindo do No 95 ate o No 172
+-> Cabo saindo do No 98 ate o No 173
+-> Cabo saindo do No 97 ate o No 174
+-> Cabo saindo do No 103 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 5%
+- Total de Geracoes: 2000
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 9647.59 metros
+- Distancia na geracao final: 9647.59 metros
+- Tempo computacional: 249.089000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 39
+-> Cabo saindo do No 39 ate o No 40
+-> Cabo saindo do No 40 ate o No 41
+-> Cabo saindo do No 41 ate o No 42
+-> Cabo saindo do No 42 ate o No 43
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 46 ate o No 47
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 63 ate o No 62
+-> Cabo saindo do No 64 ate o No 63
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 64 ate o No 65
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 79
+-> Cabo saindo do No 79 ate o No 80
+-> Cabo saindo do No 80 ate o No 81
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 103 ate o No 104
+-> Cabo saindo do No 104 ate o No 105
+-> Cabo saindo do No 30 ate o No 112
+-> Cabo saindo do No 40 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 36 ate o No 115
+-> Cabo saindo do No 32 ate o No 116
+-> Cabo saindo do No 50 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 52 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 54 ate o No 122
+-> Cabo saindo do No 52 ate o No 123
+-> Cabo saindo do No 52 ate o No 124
+-> Cabo saindo do No 69 ate o No 125
+-> Cabo saindo do No 58 ate o No 126
+-> Cabo saindo do No 27 ate o No 127
+-> Cabo saindo do No 68 ate o No 128
+-> Cabo saindo do No 56 ate o No 129
+-> Cabo saindo do No 61 ate o No 130
+-> Cabo saindo do No 62 ate o No 131
+-> Cabo saindo do No 54 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 67 ate o No 134
+-> Cabo saindo do No 65 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 66 ate o No 138
+-> Cabo saindo do No 58 ate o No 139
+-> Cabo saindo do No 70 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 82 ate o No 143
+-> Cabo saindo do No 84 ate o No 144
+-> Cabo saindo do No 84 ate o No 145
+-> Cabo saindo do No 85 ate o No 146
+-> Cabo saindo do No 85 ate o No 147
+-> Cabo saindo do No 85 ate o No 148
+-> Cabo saindo do No 93 ate o No 149
+-> Cabo saindo do No 81 ate o No 150
+-> Cabo saindo do No 77 ate o No 151
+-> Cabo saindo do No 76 ate o No 152
+-> Cabo saindo do No 93 ate o No 153
+-> Cabo saindo do No 92 ate o No 154
+-> Cabo saindo do No 91 ate o No 155
+-> Cabo saindo do No 85 ate o No 156
+-> Cabo saindo do No 94 ate o No 157
+-> Cabo saindo do No 90 ate o No 158
+-> Cabo saindo do No 85 ate o No 159
+-> Cabo saindo do No 93 ate o No 160
+-> Cabo saindo do No 71 ate o No 161
+-> Cabo saindo do No 71 ate o No 162
+-> Cabo saindo do No 41 ate o No 163
+-> Cabo saindo do No 43 ate o No 164
+-> Cabo saindo do No 37 ate o No 165
+-> Cabo saindo do No 36 ate o No 166
+-> Cabo saindo do No 50 ate o No 167
+-> Cabo saindo do No 51 ate o No 168
+-> Cabo saindo do No 47 ate o No 169
+-> Cabo saindo do No 30 ate o No 170
+-> Cabo saindo do No 90 ate o No 171
+-> Cabo saindo do No 93 ate o No 172
+-> Cabo saindo do No 95 ate o No 173
+-> Cabo saindo do No 98 ate o No 174
+-> Cabo saindo do No 105 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 5%
+- Total de Geracoes: 2000
+- Metodo de Selecao: Torneio
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 9469.00 metros
+- Distancia na geracao final: 9469.00 metros
+- Tempo computacional: 288.297000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 39
+-> Cabo saindo do No 39 ate o No 40
+-> Cabo saindo do No 40 ate o No 41
+-> Cabo saindo do No 41 ate o No 42
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 46 ate o No 47
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 61 ate o No 62
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 103 ate o No 104
+-> Cabo saindo do No 104 ate o No 105
+-> Cabo saindo do No 30 ate o No 112
+-> Cabo saindo do No 35 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 33 ate o No 115
+-> Cabo saindo do No 33 ate o No 116
+-> Cabo saindo do No 49 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 52 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 54 ate o No 122
+-> Cabo saindo do No 53 ate o No 123
+-> Cabo saindo do No 51 ate o No 124
+-> Cabo saindo do No 69 ate o No 125
+-> Cabo saindo do No 56 ate o No 126
+-> Cabo saindo do No 30 ate o No 127
+-> Cabo saindo do No 67 ate o No 128
+-> Cabo saindo do No 56 ate o No 129
+-> Cabo saindo do No 68 ate o No 130
+-> Cabo saindo do No 62 ate o No 131
+-> Cabo saindo do No 55 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 67 ate o No 134
+-> Cabo saindo do No 64 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 59 ate o No 138
+-> Cabo saindo do No 56 ate o No 139
+-> Cabo saindo do No 70 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 77 ate o No 143
+-> Cabo saindo do No 78 ate o No 144
+-> Cabo saindo do No 83 ate o No 145
+-> Cabo saindo do No 83 ate o No 146
+-> Cabo saindo do No 85 ate o No 147
+-> Cabo saindo do No 88 ate o No 148
+-> Cabo saindo do No 91 ate o No 149
+-> Cabo saindo do No 75 ate o No 150
+-> Cabo saindo do No 77 ate o No 151
+-> Cabo saindo do No 77 ate o No 152
+-> Cabo saindo do No 96 ate o No 153
+-> Cabo saindo do No 92 ate o No 154
+-> Cabo saindo do No 90 ate o No 155
+-> Cabo saindo do No 85 ate o No 156
+-> Cabo saindo do No 96 ate o No 157
+-> Cabo saindo do No 89 ate o No 158
+-> Cabo saindo do No 84 ate o No 159
+-> Cabo saindo do No 96 ate o No 160
+-> Cabo saindo do No 71 ate o No 161
+-> Cabo saindo do No 71 ate o No 162
+-> Cabo saindo do No 42 ate o No 163
+-> Cabo saindo do No 42 ate o No 164
+-> Cabo saindo do No 35 ate o No 165
+-> Cabo saindo do No 34 ate o No 166
+-> Cabo saindo do No 49 ate o No 167
+-> Cabo saindo do No 50 ate o No 168
+-> Cabo saindo do No 47 ate o No 169
+-> Cabo saindo do No 32 ate o No 170
+-> Cabo saindo do No 89 ate o No 171
+-> Cabo saindo do No 93 ate o No 172
+-> Cabo saindo do No 101 ate o No 173
+-> Cabo saindo do No 100 ate o No 174
+-> Cabo saindo do No 105 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 5%
+- Total de Geracoes: 2000
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 8972.52 metros
+- Distancia na geracao final: 8972.52 metros
+- Tempo computacional: 386.795000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 39
+-> Cabo saindo do No 39 ate o No 40
+-> Cabo saindo do No 40 ate o No 41
+-> Cabo saindo do No 41 ate o No 42
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 61 ate o No 62
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 79
+-> Cabo saindo do No 79 ate o No 80
+-> Cabo saindo do No 80 ate o No 81
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 42 ate o No 112
+-> Cabo saindo do No 40 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 41 ate o No 115
+-> Cabo saindo do No 42 ate o No 116
+-> Cabo saindo do No 49 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 52 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 54 ate o No 122
+-> Cabo saindo do No 52 ate o No 123
+-> Cabo saindo do No 51 ate o No 124
+-> Cabo saindo do No 69 ate o No 125
+-> Cabo saindo do No 59 ate o No 126
+-> Cabo saindo do No 34 ate o No 127
+-> Cabo saindo do No 69 ate o No 128
+-> Cabo saindo do No 55 ate o No 129
+-> Cabo saindo do No 69 ate o No 130
+-> Cabo saindo do No 62 ate o No 131
+-> Cabo saindo do No 55 ate o No 132
+-> Cabo saindo do No 53 ate o No 133
+-> Cabo saindo do No 67 ate o No 134
+-> Cabo saindo do No 64 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 58 ate o No 138
+-> Cabo saindo do No 59 ate o No 139
+-> Cabo saindo do No 69 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 69 ate o No 142
+-> Cabo saindo do No 77 ate o No 143
+-> Cabo saindo do No 80 ate o No 144
+-> Cabo saindo do No 78 ate o No 145
+-> Cabo saindo do No 85 ate o No 146
+-> Cabo saindo do No 85 ate o No 147
+-> Cabo saindo do No 88 ate o No 148
+-> Cabo saindo do No 97 ate o No 149
+-> Cabo saindo do No 62 ate o No 150
+-> Cabo saindo do No 81 ate o No 151
+-> Cabo saindo do No 81 ate o No 152
+-> Cabo saindo do No 101 ate o No 153
+-> Cabo saindo do No 98 ate o No 154
+-> Cabo saindo do No 95 ate o No 155
+-> Cabo saindo do No 88 ate o No 156
+-> Cabo saindo do No 96 ate o No 157
+-> Cabo saindo do No 87 ate o No 158
+-> Cabo saindo do No 89 ate o No 159
+-> Cabo saindo do No 95 ate o No 160
+-> Cabo saindo do No 70 ate o No 161
+-> Cabo saindo do No 61 ate o No 162
+-> Cabo saindo do No 42 ate o No 163
+-> Cabo saindo do No 42 ate o No 164
+-> Cabo saindo do No 45 ate o No 165
+-> Cabo saindo do No 45 ate o No 166
+-> Cabo saindo do No 50 ate o No 167
+-> Cabo saindo do No 50 ate o No 168
+-> Cabo saindo do No 46 ate o No 169
+-> Cabo saindo do No 34 ate o No 170
+-> Cabo saindo do No 88 ate o No 171
+-> Cabo saindo do No 96 ate o No 172
+-> Cabo saindo do No 97 ate o No 173
+-> Cabo saindo do No 98 ate o No 174
+-> Cabo saindo do No 103 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 5%
+- Total de Geracoes: 2000
+- Metodo de Selecao: Roleta
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 9169.60 metros
+- Distancia na geracao final: 9169.60 metros
+- Tempo computacional: 278.247000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 39
+-> Cabo saindo do No 39 ate o No 40
+-> Cabo saindo do No 40 ate o No 41
+-> Cabo saindo do No 41 ate o No 42
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 61 ate o No 62
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 103 ate o No 104
+-> Cabo saindo do No 37 ate o No 112
+-> Cabo saindo do No 37 ate o No 113
+-> Cabo saindo do No 51 ate o No 114
+-> Cabo saindo do No 37 ate o No 115
+-> Cabo saindo do No 41 ate o No 116
+-> Cabo saindo do No 50 ate o No 117
+-> Cabo saindo do No 55 ate o No 118
+-> Cabo saindo do No 53 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 52 ate o No 121
+-> Cabo saindo do No 54 ate o No 122
+-> Cabo saindo do No 53 ate o No 123
+-> Cabo saindo do No 51 ate o No 124
+-> Cabo saindo do No 69 ate o No 125
+-> Cabo saindo do No 59 ate o No 126
+-> Cabo saindo do No 38 ate o No 127
+-> Cabo saindo do No 68 ate o No 128
+-> Cabo saindo do No 55 ate o No 129
+-> Cabo saindo do No 69 ate o No 130
+-> Cabo saindo do No 62 ate o No 131
+-> Cabo saindo do No 70 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 68 ate o No 134
+-> Cabo saindo do No 64 ate o No 135
+-> Cabo saindo do No 71 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 58 ate o No 138
+-> Cabo saindo do No 70 ate o No 139
+-> Cabo saindo do No 71 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 77 ate o No 143
+-> Cabo saindo do No 86 ate o No 144
+-> Cabo saindo do No 85 ate o No 145
+-> Cabo saindo do No 86 ate o No 146
+-> Cabo saindo do No 88 ate o No 147
+-> Cabo saindo do No 85 ate o No 148
+-> Cabo saindo do No 95 ate o No 149
+-> Cabo saindo do No 76 ate o No 150
+-> Cabo saindo do No 77 ate o No 151
+-> Cabo saindo do No 77 ate o No 152
+-> Cabo saindo do No 97 ate o No 153
+-> Cabo saindo do No 97 ate o No 154
+-> Cabo saindo do No 92 ate o No 155
+-> Cabo saindo do No 90 ate o No 156
+-> Cabo saindo do No 96 ate o No 157
+-> Cabo saindo do No 92 ate o No 158
+-> Cabo saindo do No 87 ate o No 159
+-> Cabo saindo do No 96 ate o No 160
+-> Cabo saindo do No 72 ate o No 161
+-> Cabo saindo do No 70 ate o No 162
+-> Cabo saindo do No 42 ate o No 163
+-> Cabo saindo do No 35 ate o No 164
+-> Cabo saindo do No 37 ate o No 165
+-> Cabo saindo do No 36 ate o No 166
+-> Cabo saindo do No 50 ate o No 167
+-> Cabo saindo do No 37 ate o No 168
+-> Cabo saindo do No 52 ate o No 169
+-> Cabo saindo do No 39 ate o No 170
+-> Cabo saindo do No 85 ate o No 171
+-> Cabo saindo do No 97 ate o No 172
+-> Cabo saindo do No 97 ate o No 173
+-> Cabo saindo do No 97 ate o No 174
+-> Cabo saindo do No 104 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 5%
+- Total de Geracoes: 2000
+- Metodo de Selecao: Torneio
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 8602.18 metros
+- Distancia na geracao final: 8602.18 metros
+- Tempo computacional: 295.959000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 39
+-> Cabo saindo do No 39 ate o No 40
+-> Cabo saindo do No 40 ate o No 41
+-> Cabo saindo do No 41 ate o No 42
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 79
+-> Cabo saindo do No 79 ate o No 80
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 33 ate o No 112
+-> Cabo saindo do No 42 ate o No 113
+-> Cabo saindo do No 53 ate o No 114
+-> Cabo saindo do No 32 ate o No 115
+-> Cabo saindo do No 42 ate o No 116
+-> Cabo saindo do No 37 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 52 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 54 ate o No 121
+-> Cabo saindo do No 53 ate o No 122
+-> Cabo saindo do No 52 ate o No 123
+-> Cabo saindo do No 53 ate o No 124
+-> Cabo saindo do No 69 ate o No 125
+-> Cabo saindo do No 60 ate o No 126
+-> Cabo saindo do No 34 ate o No 127
+-> Cabo saindo do No 59 ate o No 128
+-> Cabo saindo do No 56 ate o No 129
+-> Cabo saindo do No 70 ate o No 130
+-> Cabo saindo do No 64 ate o No 131
+-> Cabo saindo do No 54 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 59 ate o No 134
+-> Cabo saindo do No 64 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 58 ate o No 137
+-> Cabo saindo do No 57 ate o No 138
+-> Cabo saindo do No 57 ate o No 139
+-> Cabo saindo do No 70 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 83 ate o No 143
+-> Cabo saindo do No 84 ate o No 144
+-> Cabo saindo do No 85 ate o No 145
+-> Cabo saindo do No 86 ate o No 146
+-> Cabo saindo do No 87 ate o No 147
+-> Cabo saindo do No 89 ate o No 148
+-> Cabo saindo do No 94 ate o No 149
+-> Cabo saindo do No 77 ate o No 150
+-> Cabo saindo do No 80 ate o No 151
+-> Cabo saindo do No 77 ate o No 152
+-> Cabo saindo do No 96 ate o No 153
+-> Cabo saindo do No 99 ate o No 154
+-> Cabo saindo do No 93 ate o No 155
+-> Cabo saindo do No 91 ate o No 156
+-> Cabo saindo do No 96 ate o No 157
+-> Cabo saindo do No 92 ate o No 158
+-> Cabo saindo do No 87 ate o No 159
+-> Cabo saindo do No 96 ate o No 160
+-> Cabo saindo do No 71 ate o No 161
+-> Cabo saindo do No 72 ate o No 162
+-> Cabo saindo do No 42 ate o No 163
+-> Cabo saindo do No 34 ate o No 164
+-> Cabo saindo do No 34 ate o No 165
+-> Cabo saindo do No 49 ate o No 166
+-> Cabo saindo do No 50 ate o No 167
+-> Cabo saindo do No 50 ate o No 168
+-> Cabo saindo do No 50 ate o No 169
+-> Cabo saindo do No 36 ate o No 170
+-> Cabo saindo do No 90 ate o No 171
+-> Cabo saindo do No 95 ate o No 172
+-> Cabo saindo do No 101 ate o No 173
+-> Cabo saindo do No 101 ate o No 174
+-> Cabo saindo do No 103 ate o No 175
+========================================
+RELATORIO DE EXECUCAO - REDE FTTX
+Arquivo analisado: interior64.txt
+========================================
+CONFIGURACOES DO ALGORITMO:
+- Tamanho da Populacao (TAM_P): 100
+- Taxa de Mutacao: 5%
+- Total de Geracoes: 2000
+- Metodo de Selecao: Torneio
+
+RESULTADOS:
+- Menor distancia absoluta encontrada: 8409.25 metros
+- Distancia na geracao final: 8409.25 metros
+- Tempo computacional: 279.436000 segundos
+----------------------------------------
+
+
+MAPA DE CONEXOES (ELITE - INDIVIDUO 0):
+-> Cabo saindo do No 1 ate o No 2
+-> Cabo saindo do No 2 ate o No 3
+-> Cabo saindo do No 3 ate o No 4
+-> Cabo saindo do No 4 ate o No 5
+-> Cabo saindo do No 5 ate o No 6
+-> Cabo saindo do No 6 ate o No 7
+-> Cabo saindo do No 7 ate o No 8
+-> Cabo saindo do No 8 ate o No 9
+-> Cabo saindo do No 9 ate o No 10
+-> Cabo saindo do No 10 ate o No 11
+-> Cabo saindo do No 11 ate o No 12
+-> Cabo saindo do No 12 ate o No 13
+-> Cabo saindo do No 13 ate o No 14
+-> Cabo saindo do No 14 ate o No 15
+-> Cabo saindo do No 15 ate o No 16
+-> Cabo saindo do No 16 ate o No 17
+-> Cabo saindo do No 17 ate o No 18
+-> Cabo saindo do No 18 ate o No 19
+-> Cabo saindo do No 19 ate o No 20
+-> Cabo saindo do No 20 ate o No 21
+-> Cabo saindo do No 21 ate o No 22
+-> Cabo saindo do No 22 ate o No 23
+-> Cabo saindo do No 23 ate o No 24
+-> Cabo saindo do No 24 ate o No 25
+-> Cabo saindo do No 25 ate o No 26
+-> Cabo saindo do No 26 ate o No 27
+-> Cabo saindo do No 27 ate o No 28
+-> Cabo saindo do No 28 ate o No 29
+-> Cabo saindo do No 29 ate o No 30
+-> Cabo saindo do No 30 ate o No 31
+-> Cabo saindo do No 31 ate o No 32
+-> Cabo saindo do No 32 ate o No 33
+-> Cabo saindo do No 33 ate o No 34
+-> Cabo saindo do No 34 ate o No 35
+-> Cabo saindo do No 35 ate o No 36
+-> Cabo saindo do No 36 ate o No 37
+-> Cabo saindo do No 37 ate o No 38
+-> Cabo saindo do No 38 ate o No 39
+-> Cabo saindo do No 39 ate o No 40
+-> Cabo saindo do No 40 ate o No 41
+-> Cabo saindo do No 38 ate o No 45
+-> Cabo saindo do No 45 ate o No 46
+-> Cabo saindo do No 38 ate o No 49
+-> Cabo saindo do No 49 ate o No 50
+-> Cabo saindo do No 50 ate o No 51
+-> Cabo saindo do No 51 ate o No 52
+-> Cabo saindo do No 52 ate o No 53
+-> Cabo saindo do No 53 ate o No 54
+-> Cabo saindo do No 54 ate o No 55
+-> Cabo saindo do No 55 ate o No 56
+-> Cabo saindo do No 56 ate o No 57
+-> Cabo saindo do No 57 ate o No 58
+-> Cabo saindo do No 58 ate o No 59
+-> Cabo saindo do No 59 ate o No 60
+-> Cabo saindo do No 60 ate o No 61
+-> Cabo saindo do No 66 ate o No 64
+-> Cabo saindo do No 59 ate o No 66
+-> Cabo saindo do No 57 ate o No 67
+-> Cabo saindo do No 67 ate o No 68
+-> Cabo saindo do No 68 ate o No 69
+-> Cabo saindo do No 69 ate o No 70
+-> Cabo saindo do No 70 ate o No 71
+-> Cabo saindo do No 71 ate o No 72
+-> Cabo saindo do No 72 ate o No 73
+-> Cabo saindo do No 73 ate o No 74
+-> Cabo saindo do No 74 ate o No 75
+-> Cabo saindo do No 75 ate o No 76
+-> Cabo saindo do No 76 ate o No 77
+-> Cabo saindo do No 77 ate o No 78
+-> Cabo saindo do No 78 ate o No 79
+-> Cabo saindo do No 79 ate o No 80
+-> Cabo saindo do No 78 ate o No 82
+-> Cabo saindo do No 82 ate o No 83
+-> Cabo saindo do No 83 ate o No 84
+-> Cabo saindo do No 84 ate o No 85
+-> Cabo saindo do No 85 ate o No 86
+-> Cabo saindo do No 86 ate o No 87
+-> Cabo saindo do No 87 ate o No 88
+-> Cabo saindo do No 88 ate o No 89
+-> Cabo saindo do No 89 ate o No 90
+-> Cabo saindo do No 90 ate o No 91
+-> Cabo saindo do No 91 ate o No 92
+-> Cabo saindo do No 92 ate o No 93
+-> Cabo saindo do No 93 ate o No 94
+-> Cabo saindo do No 94 ate o No 95
+-> Cabo saindo do No 95 ate o No 96
+-> Cabo saindo do No 96 ate o No 97
+-> Cabo saindo do No 97 ate o No 98
+-> Cabo saindo do No 98 ate o No 99
+-> Cabo saindo do No 99 ate o No 100
+-> Cabo saindo do No 100 ate o No 101
+-> Cabo saindo do No 101 ate o No 102
+-> Cabo saindo do No 102 ate o No 103
+-> Cabo saindo do No 103 ate o No 104
+-> Cabo saindo do No 104 ate o No 105
+-> Cabo saindo do No 28 ate o No 112
+-> Cabo saindo do No 41 ate o No 113
+-> Cabo saindo do No 50 ate o No 114
+-> Cabo saindo do No 50 ate o No 115
+-> Cabo saindo do No 50 ate o No 116
+-> Cabo saindo do No 51 ate o No 117
+-> Cabo saindo do No 53 ate o No 118
+-> Cabo saindo do No 51 ate o No 119
+-> Cabo saindo do No 53 ate o No 120
+-> Cabo saindo do No 51 ate o No 121
+-> Cabo saindo do No 54 ate o No 122
+-> Cabo saindo do No 52 ate o No 123
+-> Cabo saindo do No 50 ate o No 124
+-> Cabo saindo do No 69 ate o No 125
+-> Cabo saindo do No 59 ate o No 126
+-> Cabo saindo do No 37 ate o No 127
+-> Cabo saindo do No 59 ate o No 128
+-> Cabo saindo do No 59 ate o No 129
+-> Cabo saindo do No 70 ate o No 130
+-> Cabo saindo do No 61 ate o No 131
+-> Cabo saindo do No 55 ate o No 132
+-> Cabo saindo do No 54 ate o No 133
+-> Cabo saindo do No 67 ate o No 134
+-> Cabo saindo do No 64 ate o No 135
+-> Cabo saindo do No 64 ate o No 136
+-> Cabo saindo do No 66 ate o No 137
+-> Cabo saindo do No 66 ate o No 138
+-> Cabo saindo do No 68 ate o No 139
+-> Cabo saindo do No 69 ate o No 140
+-> Cabo saindo do No 71 ate o No 141
+-> Cabo saindo do No 71 ate o No 142
+-> Cabo saindo do No 83 ate o No 143
+-> Cabo saindo do No 78 ate o No 144
+-> Cabo saindo do No 83 ate o No 145
+-> Cabo saindo do No 87 ate o No 146
+-> Cabo saindo do No 87 ate o No 147
+-> Cabo saindo do No 88 ate o No 148
+-> Cabo saindo do No 93 ate o No 149
+-> Cabo saindo do No 80 ate o No 150
+-> Cabo saindo do No 80 ate o No 151
+-> Cabo saindo do No 75 ate o No 152
+-> Cabo saindo do No 95 ate o No 153
+-> Cabo saindo do No 94 ate o No 154
+-> Cabo saindo do No 93 ate o No 155
+-> Cabo saindo do No 88 ate o No 156
+-> Cabo saindo do No 96 ate o No 157
+-> Cabo saindo do No 91 ate o No 158
+-> Cabo saindo do No 84 ate o No 159
+-> Cabo saindo do No 95 ate o No 160
+-> Cabo saindo do No 71 ate o No 161
+-> Cabo saindo do No 71 ate o No 162
+-> Cabo saindo do No 41 ate o No 163
+-> Cabo saindo do No 51 ate o No 164
+-> Cabo saindo do No 38 ate o No 165
+-> Cabo saindo do No 38 ate o No 166
+-> Cabo saindo do No 40 ate o No 167
+-> Cabo saindo do No 38 ate o No 168
+-> Cabo saindo do No 46 ate o No 169
+-> Cabo saindo do No 49 ate o No 170
+-> Cabo saindo do No 92 ate o No 171
+-> Cabo saindo do No 94 ate o No 172
+-> Cabo saindo do No 99 ate o No 173
+-> Cabo saindo do No 102 ate o No 174
+-> Cabo saindo do No 105 ate o No 175

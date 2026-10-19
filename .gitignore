@@ -1,0 +1,41 @@
+# ==========================================
+# Projeto-FTTx - .gitignore
+# ==========================================
+
+# Executáveis e Binários Compilados
+*.exe
+*.o
+*.obj
+*.out
+*.dll
+*.so
+*.dylib
+simulador
+otimizado
+modelo
+evolucao
+
+# Arquivos temporários gerados em tempo de execução pelo C
+visualizador_fttx_temp_*.py
+
+# Caches e ambientes Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema Operacional
+Thumbs.db
+Desktop.ini
+.DS_Store
